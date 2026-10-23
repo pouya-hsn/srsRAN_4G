@@ -1,0 +1,44 @@
+[sudo] password for m: 
+
+Built in Release mode using commit 254cc719a on branch HEAD.
+
+
+---  Software Radio Systems EPC  ---
+
+Reading configuration file /home/m/Desktop/Projects/srsRAN_4G/Config/epc.conf...
+Couldn't open user_db.csv, trying /root/.config/srsran/user_db.csv
+Couldn't open /root/.config/srsran/user_db.csv either, trying /etc/srsran/user_db.csv
+HSS Initialized.
+MME S11 Initialized
+MME GTP-C Initialized
+MME Initialized. MCC: 0xf432, MNC: 0xff16
+SPGW GTP-U Initialized.
+SPGW S11 Initialized.
+SP-GW Initialized.
+Received S1 Setup Request.
+S1 Setup Request - eNB Name: srsenb01, eNB id: 0x19b
+S1 Setup Request - MCC:432, MNC:16
+S1 Setup Request - TAC 7, B-PLMN 0x34f261
+S1 Setup Request - Paging DRX v128
+Sending S1 Setup Response
+Initial UE message: LIBLTE_MME_MSG_TYPE_ATTACH_REQUEST
+Received Initial UE message -- Attach Request
+Attach request -- IMSI: 432113953366170
+Attach request -- eNB-UE S1AP Id: 1
+Attach request -- Attach type: 2
+Attach Request -- UE Network Capabilities EEA: 11110000
+Attach Request -- UE Network Capabilities EIA: 01110000
+Attach Request -- MS Network Capabilities Present: true
+PDN Connectivity Request -- EPS Bearer Identity requested: 0
+PDN Connectivity Request -- Procedure Transaction Id: 14
+PDN Connectivity Request -- ESM Information Transfer requested: true
+User not found at HSS. IMSI: 432113953366170
+User not found. IMSI 432113953366170
+SCTP Association Shutdown. Association: 355
+Deleting eNB context. eNB Id: 0x19b
+Releasing UEs context
+No UEs to be released
+^CStopping ..
+
+---  exiting  ---
+

@@ -1,0 +1,82 @@
+2026-10-23T16:59:29.774831 [EPC    ] [I] 
+
+Built in Release mode using commit 177136b85 on branch master.
+
+---  Software Radio Systems EPC log ---
+
+
+2026-10-23T16:59:29.774833 [EPC    ] [I] Using binary ./srsepc with arguments: /home/pouyahsn/RD/NTN/srsRAN_4G/Config/epc.conf 
+2026-10-23T16:59:29.774856 [HSS    ] [I] Opened DB file: /home/pouyahsn/RD/NTN/srsRAN_4G/Config/user_db.csv
+2026-10-23T16:59:29.774880 [HSS    ] [I] HSS Initialized. DB file /home/pouyahsn/RD/NTN/srsRAN_4G/Config/user_db.csv, MCC: 62514, MNC: 65333
+2026-10-23T16:59:29.774899 [S1AP   ] [I] S1-MME Initializing
+2026-10-23T16:59:29.774928 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.100:36412
+2026-10-23T16:59:29.774967 [S1AP   ] [I] S1AP Initialized
+2026-10-23T16:59:29.774967 [MME GTPC] [I] Initializing MME S11 interface.
+2026-10-23T16:59:29.774971 [MME GTPC] [I] MME S11 Initialized
+2026-10-23T16:59:29.774973 [MME GTPC] [I] MME GTP-C Initialized
+2026-10-23T16:59:29.774974 [S1AP   ] [I] MME Initialized. MCC: 0xf432, MNC: 0xff35
+2026-10-23T16:59:29.774981 [GTPU   ] [I] TUN file descriptor = 7
+2026-10-23T16:59:29.775207 [GTPU   ] [I] Initialized SGi interface
+2026-10-23T16:59:29.775210 [GTPU   ] [I] S1-U socket = 8
+2026-10-23T16:59:29.775211 [GTPU   ] [I] S1-U IP = 127.0.1.100, Port = 2152 
+2026-10-23T16:59:29.775211 [GTPU   ] [I] Initialized S1-U interface
+2026-10-23T16:59:29.775211 [GTPU   ] [I] SPGW GTP-U Initialized.
+2026-10-23T16:59:29.775215 [SPGW GTPC] [I] Initializing SPGW S11 interface.
+2026-10-23T16:59:29.775269 [SPGW GTPC] [I] SPGW S11 Initialized.
+2026-10-23T16:59:29.775270 [SPGW   ] [I] SP-GW Initialized.
+2026-10-23T16:59:29.791496 [GTPU   ] [I] IPv6 not supported yet.
+2026-10-23T16:59:29.791552 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T16:59:33.067217 [S1AP   ] [I] Received S1AP msg. Size: 49
+2026-10-23T16:59:33.067286 [S1AP   ] [I] Received Initiating PDU
+2026-10-23T16:59:33.067287 [S1AP   ] [I] Received S1 Setup Request.
+2026-10-23T16:59:33.067298 [S1AP   ] [I] Received S1 Setup Request.
+2026-10-23T16:59:33.067300 [S1AP   ] [D] eNB SCTP association Id: 8
+2026-10-23T16:59:33.067303 [S1AP   ] [I] S1 Setup Request - eNB Name: srsenb01, eNB id: 0x1c0
+2026-10-23T16:59:33.067304 [S1AP   ] [I] S1 Setup Request - MCC:432, MNC:11, PLMN: 3469841
+2026-10-23T16:59:33.067307 [S1AP   ] [I] S1 Setup Request - TAC 18938, B-PLMN 0x34f211
+2026-10-23T16:59:33.067313 [S1AP   ] [W] Sending S1 Setup Failure - Unknown PLMN
+2026-10-23T16:59:33.067320 [S1AP   ] [D] Transmitting S1AP PDU. eNB SCTP association Id: 8
+2026-10-23T16:59:33.067351 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T16:59:33.067514 [S1AP   ] [D] SCTP Notification 32773
+2026-10-23T16:59:33.067514 [S1AP   ] [I] SCTP Association Shutdown. Association: 8
+2026-10-23T16:59:33.067519 [S1AP   ] [E] Could not find eNB to delete. Association: 8
+2026-10-23T16:59:33.067519 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T16:59:33.488817 [GTPU   ] [I] IPv6 not supported yet.
+2026-10-23T16:59:38.386296 [S1AP   ] [I] Received S1AP msg. Size: 49
+2026-10-23T16:59:38.386314 [S1AP   ] [I] Received Initiating PDU
+2026-10-23T16:59:38.386315 [S1AP   ] [I] Received S1 Setup Request.
+2026-10-23T16:59:38.386322 [S1AP   ] [I] Received S1 Setup Request.
+2026-10-23T16:59:38.386323 [S1AP   ] [D] eNB SCTP association Id: 10
+2026-10-23T16:59:38.386327 [S1AP   ] [I] S1 Setup Request - eNB Name: srsenb01, eNB id: 0x1c0
+2026-10-23T16:59:38.386328 [S1AP   ] [I] S1 Setup Request - MCC:432, MNC:35, PLMN: 3469907
+2026-10-23T16:59:38.386331 [S1AP   ] [I] S1 Setup Request - TAC 18938, B-PLMN 0x34f253
+2026-10-23T16:59:38.386334 [S1AP   ] [I] Adding new eNB context. eNB ID 448
+2026-10-23T16:59:38.386344 [S1AP   ] [D] Sending S1 Setup Response
+2026-10-23T16:59:38.386350 [S1AP   ] [D] Transmitting S1AP PDU. eNB SCTP association Id: 10
+2026-10-23T16:59:38.386382 [S1AP   ] [D] S1 Setup Response sent
+2026-10-23T16:59:38.386385 [S1AP   ] [I] Sending S1 Setup Response
+2026-10-23T16:59:38.386386 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T16:59:41.296830 [GTPU   ] [I] IPv6 not supported yet.
+2026-10-23T16:59:56.656858 [GTPU   ] [I] IPv6 not supported yet.
+2026-10-23T17:00:21.335797 [S1AP   ] [I] Received S1AP msg. Size: 131
+2026-10-23T17:00:21.335814 [S1AP   ] [I] Received Initiating PDU
+2026-10-23T17:00:21.335817 [S1AP   ] [I] Received Initial UE Message.
+2026-10-23T17:00:21.335834 [S1AP   ] [I] Initial UE message: LIBLTE_MME_MSG_TYPE_TRACKING_AREA_UPDATE_REQUEST
+2026-10-23T17:00:21.335836 [S1AP   ] [I] Received Initial UE message -- Tracking Area Update Request
+2026-10-23T17:00:21.335838 [NAS    ] [I] Tracking Area Update Request -- S-TMSI 0x0
+2026-10-23T17:00:21.335841 [NAS    ] [I] Tracking Area Update Request -- eNB UE S1AP Id 1
+2026-10-23T17:00:21.335844 [NAS    ] [W] Tracking area update requests are not handled yet.
+2026-10-23T17:00:21.335847 [S1AP   ] [D] Sending message to eNB with SCTP association 10. MME UE S1AP ID 1, eNB UE S1AP ID 1
+2026-10-23T17:00:21.335857 [S1AP   ] [D] Transmitting S1AP PDU. eNB SCTP association Id: 10
+2026-10-23T17:00:21.335890 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T17:00:22.695677 [S1AP   ] [I] Received S1AP msg. Size: 161
+2026-10-23T17:00:22.695694 [S1AP   ] [I] Received Initiating PDU
+2026-10-23T17:00:22.695695 [S1AP   ] [I] Received Uplink NAS Transport Message.
+2026-10-23T17:00:22.695696 [S1AP   ] [W] Received uplink NAS, but could not find UE NAS context. MME-UE S1AP id: 1
+2026-10-23T17:00:22.695697 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T17:00:27.888856 [GTPU   ] [I] IPv6 not supported yet.
+2026-10-23T17:00:46.567017 [S1AP   ] [D] SCTP Notification 32773
+2026-10-23T17:00:46.567017 [S1AP   ] [I] SCTP Association Shutdown. Association: 10
+2026-10-23T17:00:46.567029 [S1AP   ] [I] Deleting eNB context. eNB Id: 0x1c0
+2026-10-23T17:00:46.567038 [S1AP   ] [D] Waiting for S1-MME or S11 Message
+2026-10-23T17:00:48.792821 [HSS    ] [I] Opened DB file: /home/pouyahsn/RD/NTN/srsRAN_4G/Config/user_db.csv

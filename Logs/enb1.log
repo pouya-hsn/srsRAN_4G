@@ -1,0 +1,1492 @@
+2025-12-05T18:29:05.947754 [ENB    ] [I] Using binary ./srsenb with arguments: /home/m/Desktop/Projects/srsRAN_4G/Config/enb.conf 
+2025-12-05T18:29:05.974835 [ENB    ] [I] Built in Release mode using commit 254cc719a on branch HEAD.
+2025-12-05T18:29:06.001932 [RRC    ] [I] Tx Broadcast PDU - systemInformationBlockType1, cc=0, idx=0 (15 B)
+    0000: 40 50 c8 23 00 07 00 19 b0 18 14 00 10 82 80
+2025-12-05T18:29:06.001945 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-DL-SCH-Message": {
+      "message": {
+        "c1": {
+          "systemInformationBlockType1": {
+            "cellAccessRelatedInfo": {
+              "plmn-IdentityList": [
+                {
+                  "plmn-Identity": {
+                    "mcc": [
+                      4,
+                      3,
+                      2
+                    ],
+                    "mnc": [
+                      1,
+                      1
+                    ]
+                  },
+                  "cellReservedForOperatorUse": "notReserved"
+                }
+              ],
+              "trackingAreaCode": "0000000000000111",
+              "cellIdentity": "0000000000011001101100000001",
+              "cellBarred": "notBarred",
+              "intraFreqReselection": "allowed",
+              "csg-Indication": false
+            },
+            "cellSelectionInfo": {
+              "q-RxLevMin": -65
+            },
+            "freqBandIndicator": 1,
+            "schedulingInfoList": [
+              {
+                "si-Periodicity": "rf16",
+                "sib-MappingInfo": [
+                  "sibType3"
+                ]
+              }
+            ],
+            "si-WindowLength": "ms20",
+            "systemInfoValueTag": 0
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:06.001950 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
+    0000: 00 80 0c e1 bf 78 88 00 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 90 24 81 c2 14 62 d8 4e a5
+    0020: a4
+2025-12-05T18:29:06.001971 [RRC    ] [D] Content:
+[
+  {
+    "BCCH-DL-SCH-Message": {
+      "message": {
+        "c1": {
+          "systemInformation": {
+            "criticalExtensions": {
+              "systemInformation-r8": {
+                "sib-TypeAndInfo": [
+                  {
+                    "sib2": {
+                      "radioResourceConfigCommon": {
+                        "rach-ConfigCommon": {
+                          "preambleInfo": {
+                            "numberOfRA-Preambles": "n52"
+                          },
+                          "powerRampingParameters": {
+                            "powerRampingStep": "dB6",
+                            "preambleInitialReceivedTargetPower": "dBm-104"
+                          },
+                          "ra-SupervisionInfo": {
+                            "preambleTransMax": "n10",
+                            "ra-ResponseWindowSize": "sf10",
+                            "mac-ContentionResolutionTimer": "sf64"
+                          },
+                          "maxHARQ-Msg3Tx": 4
+                        },
+                        "bcch-Config": {
+                          "modificationPeriodCoeff": "n16"
+                        },
+                        "pcch-Config": {
+                          "defaultPagingCycle": "rf32",
+                          "nB": "oneT"
+                        },
+                        "prach-Config": {
+                          "rootSequenceIndex": 128,
+                          "prach-ConfigInfo": {
+                            "prach-ConfigIndex": 3,
+                            "highSpeedFlag": false,
+                            "zeroCorrelationZoneConfig": 5,
+                            "prach-FreqOffset": 4
+                          }
+                        },
+                        "pdsch-ConfigCommon": {
+                          "referenceSignalPower": 0,
+                          "p-b": 0
+                        },
+                        "pusch-ConfigCommon": {
+                          "pusch-ConfigBasic": {
+                            "n-SB": 1,
+                            "hoppingMode": "interSubFrame",
+                            "pusch-HoppingOffset": 2,
+                            "enable64QAM": false
+                          },
+                          "ul-ReferenceSignalsPUSCH": {
+                            "groupHoppingEnabled": false,
+                            "groupAssignmentPUSCH": 0,
+                            "sequenceHoppingEnabled": false,
+                            "cyclicShift": 0
+                          }
+                        },
+                        "pucch-ConfigCommon": {
+                          "deltaPUCCH-Shift": "ds1",
+                          "nRB-CQI": 1,
+                          "nCS-AN": 0,
+                          "n1PUCCH-AN": 12
+                        },
+                        "soundingRS-UL-ConfigCommon": {
+                        },
+                        "uplinkPowerControlCommon": {
+                          "p0-NominalPUSCH": -85,
+                          "alpha": "al07",
+                          "p0-NominalPUCCH": -107,
+                          "deltaFList-PUCCH": {
+                            "deltaF-PUCCH-Format1": "deltaF0",
+                            "deltaF-PUCCH-Format1b": "deltaF3",
+                            "deltaF-PUCCH-Format2": "deltaF1",
+                            "deltaF-PUCCH-Format2a": "deltaF2",
+                            "deltaF-PUCCH-Format2b": "deltaF2"
+                          },
+                          "deltaPreambleMsg3": 6
+                        },
+                        "ul-CyclicPrefixLength": "len1"
+                      },
+                      "ue-TimersAndConstants": {
+                        "t300": "ms2000",
+                        "t301": "ms100",
+                        "t310": "ms200",
+                        "n310": "n1",
+                        "t311": "ms10000",
+                        "n311": "n1"
+                      },
+                      "freqInfo": {
+                        "ul-CarrierFreq": 18450,
+                        "ul-Bandwidth": "n25",
+                        "additionalSpectrumEmission": 1
+                      },
+                      "timeAlignmentTimerCommon": "infinity"
+                    }
+                  },
+                  {
+                    "sib3": {
+                      "cellReselectionInfoCommon": {
+                        "q-Hyst": "dB2"
+                      },
+                      "cellReselectionServingFreqInfo": {
+                        "s-NonIntraSearch": 3,
+                        "threshServingLow": 2,
+                        "cellReselectionPriority": 6
+                      },
+                      "intraFreqCellReselectionInfo": {
+                        "q-RxLevMin": -61,
+                        "p-Max": 23,
+                        "s-IntraSearch": 5,
+                        "presenceAntennaPort1": true,
+                        "neighCellConfig": "01",
+                        "t-ReselectionEUTRA": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:06.001972 [RRC    ] [I] Allocating 1 PRBs for PUCCH
+2025-12-05T18:29:06.002065 [MAC    ] [I] [    0] Using time-domain PF scheduling policy for cc=0
+2025-12-05T18:29:06.002095 [RRC    ] [I] T310 200, T311 10000, N310 1
+2025-12-05T18:29:06.002096 [RRC    ] [I] Inactivity timeout: 30000 ms
+2025-12-05T18:29:06.002096 [RRC    ] [I] Max consecutive MAC KOs: 100
+2025-12-05T18:29:06.002099 [RRC    ] [D] SRB1 configuration: {
+}
+2025-12-05T18:29:06.002099 [RRC    ] [D] SRB2 configuration: {
+}
+2025-12-05T18:29:06.002101 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2025-12-05T18:29:06.002123 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:2152
+2025-12-05T18:29:06.002128 [COMN   ] [D] [    0] RxSockets: socket fd=8 has been registered.
+2025-12-05T18:29:06.002195 [S1AP   ] [I] Connecting to MME 127.0.1.100:36412
+2025-12-05T18:29:06.002211 [COMN   ] [D] [    0] Opened SCTP socket=9
+2025-12-05T18:29:06.002216 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2025-12-05T18:29:06.002217 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2025-12-05T18:29:06.002226 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2025-12-05T18:29:06.002226 [S1AP   ] [I] SCTP socket opened. fd=9
+2025-12-05T18:29:06.002289 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.1.100
+2025-12-05T18:29:06.003322 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2025-12-05T18:29:06.003322 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2025-12-05T18:29:06.003426 [S1AP   ] [I] Proc "MME Connection" - Could not connected to MME. Aborting
+2025-12-05T18:29:06.003428 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
+2025-12-05T18:29:06.003451 [COMN   ] [W] [    0] RxSockets: The socket fd=9 to be removed does not exist
+2025-12-05T18:29:06.003461 [COMN   ] [D] [    0] Socket=9 was closed.
+2025-12-05T18:29:06.003461 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
+2025-12-05T18:29:07.114531 [PHY0   ] [I] [    0] Component Carrier Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.114535 [PHY0   ] [I] [    0] Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.156490 [PHY1   ] [I] [    0] Component Carrier Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.156514 [PHY1   ] [I] [    0] Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.198198 [PHY2   ] [I] [    0] Component Carrier Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.198221 [PHY2   ] [I] [    0] Worker 0 configured cell 25 PRB
+2025-12-05T18:29:07.204628 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2155.0 MHz
+2025-12-05T18:29:07.232147 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=1965.0 MHz
+2025-12-05T18:29:07.407915 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=25, sf_len=5760
+2025-12-05T18:29:17.508463 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2025-12-05T18:29:17.508595 [S1AP   ] [I] Connecting to MME 127.0.1.100:36412
+2025-12-05T18:29:17.508650 [COMN   ] [D] [    0] Opened SCTP socket=16
+2025-12-05T18:29:17.508667 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2025-12-05T18:29:17.508673 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2025-12-05T18:29:17.508705 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2025-12-05T18:29:17.508707 [S1AP   ] [I] SCTP socket opened. fd=16
+2025-12-05T18:29:17.508996 [S1AP   ] [I] SCTP socket connected with MME. fd=16
+2025-12-05T18:29:17.509175 [COMN   ] [D] [    0] RxSockets: socket fd=16 has been registered.
+2025-12-05T18:29:17.509177 [S1AP   ] [I] SCTP socket established with MME
+2025-12-05T18:29:17.509240 [S1AP   ] [I] Proc "MME Connection" - Connected to MME. Sending S1 setup request.
+2025-12-05T18:29:17.509364 [S1AP   ] [I] Tx S1AP SDU, s1SetupRequest
+    0000: 00 11 00 2d 00 00 04 00 3b 00 08 00 34 f2 11 00
+    0010: 00 19 b0 00 3c 40 0a 03 80 73 72 73 65 6e 62 30
+    0020: 31 00 40 00 07 00 00 01 c0 34 f2 11 00 89 40 01
+    0030: 40
+2025-12-05T18:29:17.509530 [S1AP   ] [I] Proc "MME Connection" - S1 setup request sent. Waiting for response.
+2025-12-05T18:29:17.510448 [S1AP   ] [I] Rx S1AP SDU - S1SetupResponse
+    0000: 20 11 00 25 00 00 03 00 3d 40 0a 03 80 73 72 73
+    0010: 6d 6d 65 30 31 00 69 00 0b 00 00 34 f2 11 00 00
+    0020: 01 00 00 1a 00 57 40 01 ff
+2025-12-05T18:29:17.510453 [S1AP   ] [I] Proc "MME Connection" - S1Setup procedure completed successfully
+2025-12-05T18:29:23.594572 [PHY    ] [I] [ 5842] PRACH: cc=0, 0/1, preamble=31, offset=1.0 us, peak2avg=429.8, max_offset=30.0 us
+2025-12-05T18:29:23.594932 [MAC    ] [I] [ 5841] SCHED: Added user rnti=0x46
+2025-12-05T18:29:23.594941 [MAC    ] [I] [ 5841] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}]
+2025-12-05T18:29:23.594943 [MAC    ] [I] [ 5841] SCHED: Resetting rnti=0x46, cc=0 HARQs and feedback state
+2025-12-05T18:29:23.594944 [MAC    ] [I] [ 5841] SCHED: rnti=0x46 PCell is now enb_cc_idx=0
+2025-12-05T18:29:23.594997 [RRC    ] [D] Setting timer for Msg3 reception for rnti=0x46 to 80ms
+2025-12-05T18:29:23.594999 [RRC    ] [D] Activity registered for rnti=0x46 (timeout_value=80ms)
+2025-12-05T18:29:23.595000 [RRC    ] [I] Setting RLF timer for rnti=0x46 to 4000ms
+2025-12-05T18:29:23.595019 [RLC    ] [I] Added LTE radio bearer with LCID 0 in Transparent Mode
+2025-12-05T18:29:23.595026 [RRC    ] [I] Added new user rnti=0x46
+2025-12-05T18:29:23.595029 [MAC    ] [I] [ 5841] SCHED: New PRACH tti=5841, preamble=31, temp_crnti=0x46, ta_cmd=1, msg3_size=7
+2025-12-05T18:29:23.595031 [MAC    ] [I] [ 5841] RACH:  tti=5841, cc=0, pci=1, preamble=31, offset=1, temp_crnti=0x46
+2025-12-05T18:29:23.595056 [MAC    ] [I] [ 5841] rach_tprof: {mean, max, min}={475.8, 475, 475} usec, nof_samples=1
+2025-12-05T18:29:23.595612 [MAC    ] [I] [ 5842] SCHED: RAR, ra-rnti=2, rbgs=[0, 1), dci=(2,0), msg3 grants=[{c-rnti=0x46, rba=51, mcs=0}]
+2025-12-05T18:29:23.595734 [PHY0   ] [I] [ 5842] PDCCH: cc=0, rnti=0x2, f=1A, cce= 0, L=2, riv=25, pid=0, mcs={1}, ndi={0}, tpc_pucch=0, tti_tx_dl=5846
+2025-12-05T18:29:23.595773 [PHY0   ] [I] [ 5842] PDSCH: cc=0, rnti=0x2, nof_prb=2, nof_re=252, tbs={11}, mod={2}, rv={0}, tti_tx_dl=5846
+2025-12-05T18:29:23.597339 [MAC    ] [I] [ 5844] SCHED: Msg3 tx rnti=0x46, cc=0, pid=4, dci=(0,0), prb=[1, 4), n_rtx=0, cfi=1, tbs=7, bsr=0 (0-7), tti_tx_ul=5852
+2025-12-05T18:29:23.605432 [MAC    ] [I] [ 5852] SCHED: UL adaptive link: rnti=0x46, snr_estim=5.00, last_mcs=0, snr_offset=0.001000
+2025-12-05T18:29:23.605433 [MAC    ] [I] [ 5852] Pushing PDU rnti=0x46, tti_rx=5852, nof_bytes=7
+2025-12-05T18:29:23.605438 [PHY0   ] [I] [ 5852] PUSCH: cc=0, rnti=0x46, rb=(1,3), nof_re=432, tbs=7, mod=2, rv=0, crc=OK, avg_iter=2.0, snr=36.5 dB, epre=1.2 dBfs, ta=0.1 us, cfo=2.8 hz, t=20 us
+2025-12-05T18:29:23.605449 [PHY0   ] [I] [ 5852] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5856
+2025-12-05T18:29:23.605464 [MAC    ] [I] [ 5852] 0x46 UL LCID=0 len=6
+2025-12-05T18:29:23.606422 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.606422 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.606428 [RRC    ] [I] Rx SRB0 PDU, rnti=0x46 - rrcConnectionRequest (6 B)
+    0000: 5a fc 76 2c 0d 06
+2025-12-05T18:29:23.606437 [RRC    ] [D] Content:
+[
+  {
+    "UL-CCCH-Message": {
+      "message": {
+        "c1": {
+          "rrcConnectionRequest": {
+            "criticalExtensions": {
+              "rrcConnectionRequest-r8": {
+                "ue-Identity": {
+                  "randomValue": "1010111111000111011000101100000011010000"
+                },
+                "establishmentCause": "mo-Signalling",
+                "spare": "0"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.613798 [RRC    ] [I] Allocated SR resources in time-freq slot (0, 0), sf_cfg_idx=0
+2025-12-05T18:29:23.613800 [RRC    ] [I] Allocated CQI resources for ue_cc_idx=0, time-frequency slot (0, 0), n_pucch_2=0, pmi_cfg_idx=38
+2025-12-05T18:29:23.613821 [MAC    ] [I] [ 5860] SCHED: UE Contention Resolution Identity for rnti=0x46 needs to be scheduled
+2025-12-05T18:29:23.613825 [MAC    ] [I] [ 5860] SCHED: rnti=0x46, new lcid configuration: [{lcid=0, mode=bi-dir, prio=1, lcg=0}, {lcid=1, mode=bi-dir, prio=1, lcg=0}]
+2025-12-05T18:29:23.613830 [PDCP   ] [I] Init SRB1 with bearer ID: 1
+2025-12-05T18:29:23.613831 [PDCP   ] [I] SN len bits: 5, SN len bytes: 1, reordering window: 0, Maximum SN: 31, discard timer: -1 ms
+2025-12-05T18:29:23.613832 [PDCP   ] [I] Status Report Required: False
+2025-12-05T18:29:23.613833 [PDCP   ] [I] Add SRB1 (lcid=1, sn_len=5bits)
+2025-12-05T18:29:23.614703 [RLC    ] [I] SRB1: AM LTE configured - t_poll_retx=45, poll_pdu=-1, poll_byte=-1, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0, tx_queue_length=256
+2025-12-05T18:29:23.614705 [RLC    ] [I] Added LTE radio bearer with LCID 1 in Acknowledged Mode
+2025-12-05T18:29:23.614725 [RRC    ] [I] Tx SRB0 PDU, rnti=0x46 - rrcConnectionSetup (20 B)
+    0000: 60 12 9b 2e 66 1e 82 f2 e0 cc c8 60 d3 00 00 99
+    0010: 02 00 03 e0
+2025-12-05T18:29:23.614767 [RRC    ] [D] Content:
+[
+  {
+    "DL-CCCH-Message": {
+      "message": {
+        "c1": {
+          "rrcConnectionSetup": {
+            "rrc-TransactionIdentifier": 0,
+            "criticalExtensions": {
+              "c1": {
+                "rrcConnectionSetup-r8": {
+                  "radioResourceConfigDedicated": {
+                    "srb-ToAddModList": [
+                      {
+                        "srb-Identity": 1,
+                        "rlc-Config": {
+                        },
+                        "logicalChannelConfig": {
+                        }
+                      }
+                    ],
+                    "mac-MainConfig": {
+                      "explicitValue": {
+                        "ul-SCH-Config": {
+                          "maxHARQ-Tx": "n4",
+                          "periodicBSR-Timer": "sf20",
+                          "retxBSR-Timer": "sf320",
+                          "ttiBundling": false
+                        },
+                        "timeAlignmentTimerDedicated": "infinity",
+                        "phr-Config": {
+                          "setup": {
+                            "periodicPHR-Timer": "sf50",
+                            "prohibitPHR-Timer": "sf0",
+                            "dl-PathlossChange": "dB3"
+                          }
+                        }
+                      }
+                    },
+                    "physicalConfigDedicated": {
+                      "pdsch-ConfigDedicated": {
+                        "p-a": "dB0"
+                      },
+                      "pucch-ConfigDedicated": {
+                        "ackNackRepetition": {
+                        }
+                      },
+                      "pusch-ConfigDedicated": {
+                        "betaOffset-ACK-Index": 6,
+                        "betaOffset-RI-Index": 6,
+                        "betaOffset-CQI-Index": 6
+                      },
+                      "uplinkPowerControlDedicated": {
+                        "p0-UE-PUSCH": 0,
+                        "deltaMCS-Enabled": "en0",
+                        "accumulationEnabled": true,
+                        "p0-UE-PUCCH": 0,
+                        "pSRS-Offset": 3
+                      },
+                      "cqi-ReportConfig": {
+                        "nomPDSCH-RS-EPRE-Offset": 0,
+                        "cqi-ReportPeriodic": {
+                          "setup": {
+                            "cqi-PUCCH-ResourceIndex": 0,
+                            "cqi-pmi-ConfigIndex": 38,
+                            "cqi-FormatIndicatorPeriodic": {
+                            },
+                            "simultaneousAckNackAndCQI": true
+                          }
+                        }
+                      },
+                      "antennaInfo": {
+                        "explicitValue": {
+                          "transmissionMode": "tm1",
+                          "ue-TransmitAntennaSelection": {
+                          }
+                        }
+                      },
+                      "schedulingRequestConfig": {
+                        "setup": {
+                          "sr-PUCCH-ResourceIndex": 0,
+                          "sr-ConfigIndex": 15,
+                          "dsr-TransMax": "n64"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.616578 [RLC    ] [I] SRB0: Tx SDU, queue size=1, bytes=20
+    0000: 60 12 9b 2e 66 1e 82 f2 e0 cc c8 60 d3 00 00 99
+    0010: 02 00 03 e0
+2025-12-05T18:29:23.616638 [RRC    ] [D] Setting timer for UE establishment for rnti=0x46 to 2000ms
+2025-12-05T18:29:23.616639 [RRC    ] [D] Activity registered for rnti=0x46 (timeout_value=2000ms)
+2025-12-05T18:29:23.617487 [MAC    ] [I] [ 5864] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(2, 0), n_rtx=0, cfi=1, tbs=32, buffer=29/0, tti_tx_dl=5868
+2025-12-05T18:29:23.617490 [MAC    ] [I] [ 5864] SCHED: DL MAC CEs cc=0: rnti=0x46: [CE "ConResId"]
+2025-12-05T18:29:23.617497 [RLC    ] [I] SRB0: Tx Transparent Mode PDU, queue size=0, bytes=0
+    0000: 60 12 9b 2e 66 1e 82 f2 e0 cc c8 60 d3 00 00 99
+    0010: 02 00 03 e0
+2025-12-05T18:29:23.617505 [MAC    ] [I] [ 5864] 0x46 DL CON_RES: id=0x5afc762c0d06 LCID=0 len=20
+2025-12-05T18:29:23.617535 [PHY0   ] [I] [ 5864] PDCCH: cc=0, rnti=0x46, f=1A, cce= 0, L=2, riv=25, pid=0, mcs={8}, ndi={1}, tpc_pucch=1, tti_tx_dl=5868
+2025-12-05T18:29:23.617560 [PHY0   ] [I] [ 5864] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={32}, mod={2}, rv={0}, tti_tx_dl=5868
+2025-12-05T18:29:23.625312 [MAC    ] [I] [ 5872] SCHED: DL adaptive link: rnti=0x46, cqi=5, last_mcs=8, cqi_offset=0.001000
+2025-12-05T18:29:23.625321 [PHY0   ] [I] [ 5872] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=12, dmrs_corr=0.999, snr=25.0 dB, corr=0.998, ack=1, ta=0.1 us
+2025-12-05T18:29:23.626273 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.626274 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.633472 [PHY0   ] [I] [ 5880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.999, snr=24.8 dB, corr=0.998, sr=yes, ta=0.1 us
+2025-12-05T18:29:23.633497 [MAC    ] [I] [ 5880] SCHED: UL tx rnti=0x46, cc=0, pid=0, dci=(2,0), prb=[1, 21), n_rtx=0, cfi=1, tbs=67, bsr=0 (512-67), tti_tx_ul=5888
+2025-12-05T18:29:23.633531 [PHY0   ] [I] [ 5880] PDCCH: cc=0, rnti=0x46, f=0, cce= 0, L=2, riv=173, mcs=0, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, tti_tx_dl=5884
+2025-12-05T18:29:23.634461 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.634545 [PHY1   ] [I] [ 5881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.996, snr=25.0 dB, corr=1.000, cqi=8 (cc=0), ta=0.2 us
+2025-12-05T18:29:23.635424 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.641317 [MAC    ] [I] [ 5888] SCHED: UL adaptive link: rnti=0x46, snr_estim=5.00, last_mcs=0, snr_offset=0.002000
+2025-12-05T18:29:23.641319 [MAC    ] [I] [ 5888] Pushing PDU rnti=0x46, tti_rx=5888, nof_bytes=67
+2025-12-05T18:29:23.641328 [PHY0   ] [I] [ 5888] PUSCH: cc=0, rnti=0x46, rb=(1,20), nof_re=2880, tbs=67, mod=2, rv=0, crc=OK, avg_iter=2.0, snr=28.0 dB, epre=-8.7 dBfs, ta=0.1 us, cfo=-0.6 hz, t=98 us
+2025-12-05T18:29:23.641352 [PHY0   ] [I] [ 5888] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5892
+2025-12-05T18:29:23.641411 [MAC    ] [I] [ 5888] 0x46 UL SBSR: lcg=0 b=11 PHR: ph=27.0 LCID=1 len=62
+2025-12-05T18:29:23.641420 [RLC    ] [I] SRB1: Rx PDU - N bytes 62
+2025-12-05T18:29:23.641422 [RLC    ] [I] SRB1: Rx data PDU SN=0 (60 B)
+    0000: 00 20 30 80 01 98 5d 17 ca d5 aa b1 18 07 41 12
+    0010: 0b f6 34 f2 11 80 01 98 e6 58 35 52 05 f0 70 c0
+    0020: 40 11 00 05 02 40 d0 11 d1 52 34 f2 11 b8 6b 5c
+    0030: 0a 00 31 04 65 a0 3e 00 13 34 f2 11
+2025-12-05T18:29:23.642178 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.642178 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.642297 [MAC    ] [I] [ 5889] SCHED: UL tx rnti=0x46, cc=0, pid=1, dci=(1,2), prb=[1, 2), n_rtx=0, cfi=1, tbs=55, bsr=0 (53-55), tti_tx_ul=5897
+2025-12-05T18:29:23.642375 [PHY1   ] [I] [ 5889] PDCCH: cc=0, rnti=0x46, f=0, cce= 2, L=1, riv=1, mcs=22, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, tti_tx_dl=5893
+2025-12-05T18:29:23.650419 [MAC    ] [I] [ 5897] SCHED: UL adaptive link: rnti=0x46, snr_estim=25.94, last_mcs=22, snr_offset=0.003000
+2025-12-05T18:29:23.650421 [MAC    ] [I] [ 5897] Pushing PDU rnti=0x46, tti_rx=5897, nof_bytes=55
+2025-12-05T18:29:23.650428 [PHY1   ] [I] [ 5897] PUSCH: cc=0, rnti=0x46, rb=(1,1), nof_re=144, tbs=55, mod=4, rv=0, crc=OK, avg_iter=2.0, snr=28.9 dB, epre=-8.5 dBfs, ta=0.1 us, cfo=0.2 hz, t=27 us
+2025-12-05T18:29:23.650445 [MAC    ] [I] [ 5897] 0x46 UL LBSR: b=0 0 0 0  PHR: ph=40.0 LCID=1 len=48
+2025-12-05T18:29:23.650447 [MAC    ] [I] [ 5897] SCHED: UL tx rnti=0x46, cc=0, pid=1, dci=(1,2), prb=[1, 2), n_rtx=0, cfi=1, tbs=55, bsr=0 (53-55), tti_tx_ul=5905
+2025-12-05T18:29:23.650450 [RLC    ] [I] SRB1: Rx PDU - N bytes 48
+2025-12-05T18:29:23.650450 [RLC    ] [I] SRB1: Rx data PDU SN=1 (46 B)
+    0000: 91 5b 11 03 57 58 86 20 0c 61 14 04 22 91 81 00
+    0010: 12 16 10 00 00 40 08 04 02 60 04 00 02 1f 02 5d
+    0020: 01 03 e0 c1 10 02 21 00 62 60 00 00 00 00
+2025-12-05T18:29:23.650452 [RLC    ] [I] SRB1: Status packet requested through polling bit
+2025-12-05T18:29:23.650453 [RLC    ] [I] SRB1: Rx SDU (106 B)
+    0000: 00 20 30 80 01 98 5d 17 ca d5 aa b1 18 07 41 12
+    0010: 0b f6 34 f2 11 80 01 98 e6 58 35 52 05 f0 70 c0
+    0020: 40 11 00 05 02 40 d0 11 d1 52 34 f2 11 b8 6b 5c
+    0030: 0a 00 31 04 65 a0 3e 00 13 34 f2 11 91 5b 11 03
+    0040: 57 58 86 20 0c 61 14 04 22 91 81 00 12 16 10 00
+    0050: 00 40 08 04 02 60 04 00 02 1f 02 5d 01 03 e0 c1
+    0060: 10 02 21 00 62 60 00 00 00 00
+2025-12-05T18:29:23.650457 [PDCP   ] [I] SRB1 Rx PDU SN=0 (106 B, integrity=none, encryption=none)
+    0000: 00 20 30 80 01 98 5d 17 ca d5 aa b1 18 07 41 12
+    0010: 0b f6 34 f2 11 80 01 98 e6 58 35 52 05 f0 70 c0
+    0020: 40 11 00 05 02 40 d0 11 d1 52 34 f2 11 b8 6b 5c
+    0030: 0a 00 31 04 65 a0 3e 00 13 34 f2 11 91 5b 11 03
+    0040: 57 58 86 20 0c 61 14 04 22 91 81 00 12 16 10 00
+    0050: 00 40 08 04 02 60 04 00 02 1f 02 5d 01 03 e0 c1
+    0060: 10 02 21 00 62 60 00 00 00 00
+2025-12-05T18:29:23.650467 [PHY1   ] [I] [ 5897] PDCCH: cc=0, rnti=0x46, f=0, cce= 2, L=1, riv=1, mcs=22, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, tti_tx_dl=5901
+2025-12-05T18:29:23.650470 [PHY1   ] [I] [ 5897] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5901
+2025-12-05T18:29:23.651410 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.651410 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.651425 [RRC    ] [I] Rx SRB1 PDU, rnti=0x46 - rrcConnectionSetupComplete (101 B)
+    0000: 20 30 80 01 98 5d 17 ca d5 aa b1 18 07 41 12 0b
+    0010: f6 34 f2 11 80 01 98 e6 58 35 52 05 f0 70 c0 40
+    0020: 11 00 05 02 40 d0 11 d1 52 34 f2 11 b8 6b 5c 0a
+    0030: 00 31 04 65 a0 3e 00 13 34 f2 11 91 5b 11 03 57
+    0040: 58 86 20 0c 61 14 04 22 91 81 00 12 16 10 00 00
+    0050: 40 08 04 02 60 04 00 02 1f 02 5d 01 03 e0 c1 10
+    0060: 02 21 00 62 60
+2025-12-05T18:29:23.651457 [RRC    ] [D] Content:
+[
+  {
+    "UL-DCCH-Message": {
+      "message": {
+        "c1": {
+          "rrcConnectionSetupComplete": {
+            "rrc-TransactionIdentifier": 0,
+            "criticalExtensions": {
+              "c1": {
+                "rrcConnectionSetupComplete-r8": {
+                  "selectedPLMN-Identity": 1,
+                  "registeredMME": {
+                    "mmegi": "1000000000000001",
+                    "mmec": "10011000"
+                  },
+                  "dedicatedInfoNAS": "17cad5aab1180741120bf634f211800198e658355205f070c0401100050240d011d15234f211b86b5c0a00310465a03e001334f211915b1103575886200c61140422918100121610000040080402600400021f025d0103e0c110022100",
+                  "nonCriticalExtension": {
+                    "nonCriticalExtension": {
+                      "gummei-Type-r10": "native",
+                      "nonCriticalExtension": {
+                        "nonCriticalExtension": {
+                          "mobilityState-r12": "normal"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.651479 [MAC    ] [I] [ 5898] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(1, 2), n_rtx=0, cfi=1, tbs=7, buffer=7/0, tti_tx_dl=5902
+2025-12-05T18:29:23.651491 [RLC    ] [I] Tx status PDU - SRB1: ACK_SN = 2, N_nack = 0
+2025-12-05T18:29:23.651498 [MAC    ] [I] [ 5898] 0x46 DL LCID=1 len=2
+2025-12-05T18:29:23.651520 [PHY0   ] [I] [ 5898] PDCCH: cc=0, rnti=0x46, f=1A, cce= 2, L=1, riv=25, pid=0, mcs={1}, ndi={0}, tpc_pucch=1, tti_tx_dl=5902
+2025-12-05T18:29:23.651540 [PHY0   ] [I] [ 5898] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={7}, mod={2}, rv={0}, tti_tx_dl=5902
+2025-12-05T18:29:23.653230 [PHY0   ] [I] [ 5900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.108, snr=-0.6 dB, corr=0.000, sr=no, ta=-0.5 us
+2025-12-05T18:29:23.653272 [RRC    ] [I] RRCConnectionSetupComplete transaction ID: 0
+2025-12-05T18:29:23.653314 [S1AP   ] [I] Tx S1AP SDU, InitialUEMessage, rnti=0x46
+    0000: 00 0c 40 80 86 00 00 05 00 08 00 02 00 01 00 1a
+    0010: 00 5e 5d 17 ca d5 aa b1 18 07 41 12 0b f6 34 f2
+    0020: 11 80 01 98 e6 58 35 52 05 f0 70 c0 40 11 00 05
+    0030: 02 40 d0 11 d1 52 34 f2 11 b8 6b 5c 0a 00 31 04
+    0040: 65 a0 3e 00 13 34 f2 11 91 5b 11 03 57 58 86 20
+    0050: 0c 61 14 04 22 91 81 00 12 16 10 00 00 40 08 04
+    0060: 02 60 04 00 02 1f 02 5d 01 03 e0 c1 10 02 21 00
+    0070: 00 43 00 06 00 34 f2 11 00 07 00 64 40 08 00 34
+    0080: f2 11 00 19 b0 10 00 86 40 01 30
+2025-12-05T18:29:23.653376 [RRC    ] [D] Setting timer for UE inactivity for rnti=0x46 to 30000ms
+2025-12-05T18:29:23.653376 [RRC    ] [D] Activity registered for rnti=0x46 (timeout_value=30000ms)
+2025-12-05T18:29:23.653377 [RRC    ] [D] Activity registered for rnti=0x46 (timeout_value=30000ms)
+2025-12-05T18:29:23.655849 [S1AP   ] [I] Rx S1AP SDU - DownlinkNASTransport
+    0000: 00 0b 40 17 00 00 03 00 00 00 02 00 01 00 08 00
+    0010: 02 00 01 00 1a 00 04 03 07 55 01
+2025-12-05T18:29:23.655851 [S1AP   ] [I] Checking UE S1 logical connection. eNB UE S1AP ID=1, MME UE S1AP ID=1
+2025-12-05T18:29:23.655861 [RRC    ] [I] Tx SRB1 PDU, rnti=0x46 - dlInformationTransfer (6 B)
+    0000: 08 00 18 3a a8 08
+2025-12-05T18:29:23.655873 [RRC    ] [D] Content:
+[
+  {
+    "DL-DCCH-Message": {
+      "message": {
+        "c1": {
+          "dlInformationTransfer": {
+            "rrc-TransactionIdentifier": 0,
+            "criticalExtensions": {
+              "c1": {
+                "dlInformationTransfer-r8": {
+                  "dedicatedInfoType": {
+                    "dedicatedInfoNAS": "075501"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.658073 [PDCP   ] [I] TX SRB1 PDU, SN=0, integrity=none, encryption=none
+    0000: 00 08 00 18 3a a8 08 00 00 00 00
+2025-12-05T18:29:23.658076 [RLC    ] [I] SRB1: Tx SDU (11 B, PDCP_SN=0 tx_sdu_queue_len=1)
+    0000: 00 08 00 18 3a a8 08 00 00 00 00
+2025-12-05T18:29:23.658169 [MAC    ] [I] [ 5905] SCHED: UL adaptive link: rnti=0x46, snr_estim=27.03, last_mcs=22, snr_offset=0.004000
+2025-12-05T18:29:23.658171 [MAC    ] [I] [ 5905] Pushing PDU rnti=0x46, tti_rx=5905, nof_bytes=55
+2025-12-05T18:29:23.658179 [PHY1   ] [I] [ 5905] PUSCH: cc=0, rnti=0x46, rb=(1,1), nof_re=144, tbs=55, mod=4, rv=0, crc=OK, avg_iter=2.0, snr=28.5 dB, epre=-8.8 dBfs, ta=0.2 us, cfo=-2.4 hz, t=22 us
+2025-12-05T18:29:23.658197 [MAC    ] [I] [ 5905] 0x46 UL LBSR: b=0 0 0 0  PAD: len=50
+2025-12-05T18:29:23.658200 [MAC    ] [I] [ 5905] SCHED: DL tx rnti=0x46, cc=0, pid=1, mask=0x1000, dci=(1, 2), n_rtx=0, cfi=1, tbs=18, buffer=18/0, tti_tx_dl=5909
+2025-12-05T18:29:23.658205 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.658205 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.658210 [RLC    ] [I] SRB1: Tx PDU SN=0 (13 B)
+    0000: a0 00 00 08 00 18 3a a8 08 00 00 00 00
+2025-12-05T18:29:23.658216 [MAC    ] [I] [ 5905] 0x46 DL LCID=1 len=13
+2025-12-05T18:29:23.658236 [PHY1   ] [I] [ 5905] PDCCH: cc=0, rnti=0x46, f=1, cce= 2, L=1, rbg=0x1000, pid=1, mcs={5}, ndi={1}, tpc_pucch=1, tti_tx_dl=5909
+2025-12-05T18:29:23.658255 [PHY1   ] [I] [ 5905] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={18}, mod={2}, rv={0}, tti_tx_dl=5909
+2025-12-05T18:29:23.658258 [PHY1   ] [I] [ 5905] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5909
+2025-12-05T18:29:23.659315 [MAC    ] [I] [ 5906] SCHED: DL adaptive link: rnti=0x46, cqi=8, last_mcs=1, cqi_offset=0.002000
+2025-12-05T18:29:23.659322 [PHY0   ] [I] [ 5906] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=14, dmrs_corr=0.998, snr=34.1 dB, corr=1.000, ack=1, ta=0.1 us
+2025-12-05T18:29:23.660234 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.660235 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.666369 [MAC    ] [I] [ 5913] SCHED: DL adaptive link: rnti=0x46, cqi=8, last_mcs=5, cqi_offset=0.003000
+2025-12-05T18:29:23.666377 [PHY1   ] [I] [ 5913] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=14, dmrs_corr=0.999, snr=35.0 dB, corr=1.000, ack=1, ta=0.1 us
+2025-12-05T18:29:23.667346 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.667347 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.673487 [PHY0   ] [I] [ 5920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.999, snr=34.1 dB, corr=1.000, sr=yes, ta=0.1 us
+2025-12-05T18:29:23.673512 [MAC    ] [I] [ 5920] SCHED: UL tx rnti=0x46, cc=0, pid=0, dci=(1,0), prb=[1, 10), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5928
+2025-12-05T18:29:23.673541 [PHY0   ] [I] [ 5920] PDCCH: cc=0, rnti=0x46, f=0, cce= 0, L=1, riv=201, mcs=22, rv=0, ndi=0, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, tti_tx_dl=5924
+2025-12-05T18:29:23.674403 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.674498 [PHY1   ] [I] [ 5921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.2 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.675155 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.681412 [MAC    ] [I] [ 5928] SCHED: UL adaptive link: rnti=0x46, snr_estim=27.52, last_mcs=22, snr_offset=0.005000
+2025-12-05T18:29:23.681414 [MAC    ] [I] [ 5928] Pushing PDU rnti=0x46, tti_rx=5928, nof_bytes=517
+2025-12-05T18:29:23.681425 [PHY0   ] [I] [ 5928] PUSCH: cc=0, rnti=0x46, rb=(1,9), nof_re=1296, tbs=517, mod=4, rv=0, crc=OK, avg_iter=2.0, snr=31.0 dB, epre=-7.0 dBfs, ta=0.1 us, cfo=-0.3 hz, t=154 us
+2025-12-05T18:29:23.681456 [PHY0   ] [I] [ 5928] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5932
+2025-12-05T18:29:23.681504 [MAC    ] [I] [ 5928] 0x46 UL SBSR: lcg=0 b=0 LCID=1 len=2 LCID=1 len=27 PAD: len=481
+2025-12-05T18:29:23.681512 [RLC    ] [I] SRB1: Rx PDU - N bytes 2
+2025-12-05T18:29:23.681519 [RLC    ] [I] Rx Status PDU SRB1: ACK_SN = 1, N_nack = 0
+2025-12-05T18:29:23.681528 [RLC    ] [I] SRB1: Rx PDU - N bytes 27
+2025-12-05T18:29:23.681531 [RLC    ] [I] SRB1: Rx data PDU SN=2 (25 B)
+    0000: 01 48 02 22 fb fb c2 24 23 20 ea c1 09 24 62 32
+    0010: 66 ac 62 c0 e0 00 00 00 00
+2025-12-05T18:29:23.681533 [RLC    ] [I] SRB1: Status packet requested through polling bit
+2025-12-05T18:29:23.681536 [RLC    ] [I] SRB1: Rx SDU (25 B)
+    0000: 01 48 02 22 fb fb c2 24 23 20 ea c1 09 24 62 32
+    0010: 66 ac 62 c0 e0 00 00 00 00
+2025-12-05T18:29:23.681539 [PDCP   ] [I] SRB1 Rx PDU SN=1 (25 B, integrity=none, encryption=none)
+    0000: 01 48 02 22 fb fb c2 24 23 20 ea c1 09 24 62 32
+    0010: 66 ac 62 c0 e0 00 00 00 00
+2025-12-05T18:29:23.682201 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.682203 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.682214 [RRC    ] [I] Rx SRB1 PDU, rnti=0x46 - ulInformationTransfer (20 B)
+    0000: 48 02 22 fb fb c2 24 23 20 ea c1 09 24 62 32 66
+    0010: ac 62 c0 e0
+2025-12-05T18:29:23.682238 [RRC    ] [D] Content:
+[
+  {
+    "UL-DCCH-Message": {
+      "message": {
+        "c1": {
+          "ulInformationTransfer": {
+            "criticalExtensions": {
+              "c1": {
+                "ulInformationTransfer-r8": {
+                  "dedicatedInfoType": {
+                    "dedicatedInfoNAS": "17dfde1121190756084923119335631607"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.682269 [MAC    ] [I] [ 5929] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(1, 2), n_rtx=0, cfi=1, tbs=7, buffer=7/0, tti_tx_dl=5933
+2025-12-05T18:29:23.682278 [RLC    ] [I] Tx status PDU - SRB1: ACK_SN = 3, N_nack = 0
+2025-12-05T18:29:23.682287 [MAC    ] [I] [ 5929] 0x46 DL LCID=1 len=2
+2025-12-05T18:29:23.682318 [PHY1   ] [I] [ 5929] PDCCH: cc=0, rnti=0x46, f=1, cce= 2, L=1, rbg=0x1000, pid=0, mcs={1}, ndi={1}, tpc_pucch=1, tti_tx_dl=5933
+2025-12-05T18:29:23.682344 [PHY1   ] [I] [ 5929] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={7}, mod={2}, rv={0}, tti_tx_dl=5933
+2025-12-05T18:29:23.684382 [S1AP   ] [I] Received RRC SDU
+    0000: 17 df de 11 21 19 07 56 08 49 23 11 93 35 63 16
+    0010: 07
+2025-12-05T18:29:23.684414 [S1AP   ] [I] Tx S1AP SDU, UplinkNASTransport, rnti=0x46
+    0000: 00 0d 40 3b 00 00 05 00 00 00 02 00 01 00 08 00
+    0010: 02 00 01 00 1a 00 12 11 17 df de 11 21 19 07 56
+    0020: 08 49 23 11 93 35 63 16 07 00 64 40 08 00 34 f2
+    0030: 11 00 19 b0 10 00 43 40 06 00 34 f2 11 00 07
+2025-12-05T18:29:23.687093 [S1AP   ] [I] Rx S1AP SDU - DownlinkNASTransport
+    0000: 00 0b 40 17 00 00 03 00 00 00 02 00 01 00 08 00
+    0010: 02 00 01 00 1a 00 04 03 07 44 15
+2025-12-05T18:29:23.687095 [S1AP   ] [I] Checking UE S1 logical connection. eNB UE S1AP ID=1, MME UE S1AP ID=1
+2025-12-05T18:29:23.687104 [RRC    ] [I] Tx SRB1 PDU, rnti=0x46 - dlInformationTransfer (6 B)
+    0000: 08 00 18 3a 20 a8
+2025-12-05T18:29:23.687120 [RRC    ] [D] Content:
+[
+  {
+    "DL-DCCH-Message": {
+      "message": {
+        "c1": {
+          "dlInformationTransfer": {
+            "rrc-TransactionIdentifier": 0,
+            "criticalExtensions": {
+              "c1": {
+                "dlInformationTransfer-r8": {
+                  "dedicatedInfoType": {
+                    "dedicatedInfoNAS": "074415"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:23.688952 [PDCP   ] [I] TX SRB1 PDU, SN=1, integrity=none, encryption=none
+    0000: 01 08 00 18 3a 20 a8 00 00 00 00
+2025-12-05T18:29:23.688955 [RLC    ] [I] SRB1: Tx SDU (11 B, PDCP_SN=1 tx_sdu_queue_len=1)
+    0000: 01 08 00 18 3a 20 a8 00 00 00 00
+2025-12-05T18:29:23.689390 [MAC    ] [I] [ 5936] SCHED: DL tx rnti=0x46, cc=0, pid=1, mask=0x1000, dci=(1, 0), n_rtx=0, cfi=1, tbs=18, buffer=18/0, tti_tx_dl=5940
+2025-12-05T18:29:23.689400 [RLC    ] [I] SRB1: Tx PDU SN=1 (13 B)
+    0000: a0 01 01 08 00 18 3a 20 a8 00 00 00 00
+2025-12-05T18:29:23.689405 [MAC    ] [I] [ 5936] 0x46 DL LCID=1 len=13
+2025-12-05T18:29:23.689442 [PHY0   ] [I] [ 5936] PDCCH: cc=0, rnti=0x46, f=1, cce= 0, L=1, rbg=0x1000, pid=1, mcs={5}, ndi={0}, tpc_pucch=1, tti_tx_dl=5940
+2025-12-05T18:29:23.689465 [PHY0   ] [I] [ 5936] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={18}, mod={2}, rv={0}, tti_tx_dl=5940
+2025-12-05T18:29:23.690502 [MAC    ] [I] [ 5937] SCHED: DL adaptive link: rnti=0x46, cqi=8, last_mcs=1, cqi_offset=0.004000
+2025-12-05T18:29:23.690511 [PHY1   ] [I] [ 5937] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=14, dmrs_corr=0.998, snr=35.0 dB, corr=1.000, ack=1, ta=0.1 us
+2025-12-05T18:29:23.691421 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.691422 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.693296 [PHY0   ] [I] [ 5940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.150, snr=-1.0 dB, corr=0.000, sr=no, ta=-6.9 us
+2025-12-05T18:29:23.697582 [MAC    ] [I] [ 5944] SCHED: DL adaptive link: rnti=0x46, cqi=8, last_mcs=5, cqi_offset=0.005000
+2025-12-05T18:29:23.697592 [PHY0   ] [I] [ 5944] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=12, dmrs_corr=1.000, snr=33.6 dB, corr=1.000, ack=1, ta=0.1 us
+2025-12-05T18:29:23.698170 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.698171 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.713555 [PHY0   ] [I] [ 5960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.999, snr=35.4 dB, corr=1.000, sr=yes, ta=0.1 us
+2025-12-05T18:29:23.713585 [MAC    ] [I] [ 5960] SCHED: UL tx rnti=0x46, cc=0, pid=0, dci=(1,0), prb=[1, 10), n_rtx=0, cfi=1, tbs=517, bsr=0 (512-517), tti_tx_ul=5968
+2025-12-05T18:29:23.713620 [PHY0   ] [I] [ 5960] PDCCH: cc=0, rnti=0x46, f=0, cce= 0, L=1, riv=201, mcs=22, rv=0, ndi=1, f_h=n/a, cqi=no, tpc_pusch=1, dmrs_cs=0, tti_tx_dl=5964
+2025-12-05T18:29:23.714501 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.714646 [PHY1   ] [I] [ 5961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.2 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.715160 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.721383 [MAC    ] [I] [ 5968] SCHED: UL adaptive link: rnti=0x46, snr_estim=29.94, last_mcs=22, snr_offset=0.006000
+2025-12-05T18:29:23.721385 [MAC    ] [I] [ 5968] Pushing PDU rnti=0x46, tti_rx=5968, nof_bytes=517
+2025-12-05T18:29:23.721395 [PHY0   ] [I] [ 5968] PUSCH: cc=0, rnti=0x46, rb=(1,9), nof_re=1296, tbs=517, mod=4, rv=0, crc=OK, avg_iter=2.0, snr=31.0 dB, epre=-6.9 dBfs, ta=0.1 us, cfo=5.7 hz, t=118 us
+2025-12-05T18:29:23.721422 [PHY0   ] [I] [ 5968] PHICH: rnti=0x46, hi=1, I_lowest=1, n_dmrs=0, tti_tx_dl=5972
+2025-12-05T18:29:23.721432 [MAC    ] [I] [ 5968] 0x46 UL SBSR: lcg=0 b=0 PHR: ph=26.0 LCID=1 len=2 PAD: len=508
+2025-12-05T18:29:23.721439 [RLC    ] [I] SRB1: Rx PDU - N bytes 2
+2025-12-05T18:29:23.721443 [RLC    ] [I] Rx Status PDU SRB1: ACK_SN = 2, N_nack = 0
+2025-12-05T18:29:23.722204 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.722205 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.733326 [PHY0   ] [I] [ 5980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.198, snr=-0.6 dB, corr=0.000, sr=no, ta=13.0 us
+2025-12-05T18:29:23.753550 [PHY0   ] [I] [ 6000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.042, snr=-1.0 dB, corr=0.000, sr=no, ta=-17.9 us
+2025-12-05T18:29:23.754656 [PHY1   ] [I] [ 6001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=33.4 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.755143 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.773392 [PHY0   ] [I] [ 6020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.024, snr=-0.6 dB, corr=0.000, sr=no, ta=8.5 us
+2025-12-05T18:29:23.793561 [PHY0   ] [I] [ 6040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.325, snr=-0.3 dB, corr=0.000, sr=no, ta=-3.1 us
+2025-12-05T18:29:23.794345 [PHY1   ] [I] [ 6041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=36.8 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.795197 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.813361 [PHY0   ] [I] [ 6060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.056, snr=-0.5 dB, corr=0.000, sr=no, ta=-1.0 us
+2025-12-05T18:29:23.833556 [PHY0   ] [I] [ 6080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.045, snr=-0.3 dB, corr=0.000, sr=no, ta=8.7 us
+2025-12-05T18:29:23.834294 [PHY1   ] [I] [ 6081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=32.1 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.835276 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.853409 [PHY0   ] [I] [ 6100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.060, snr=-0.6 dB, corr=0.000, sr=no, ta=4.6 us
+2025-12-05T18:29:23.873598 [PHY0   ] [I] [ 6120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.082, snr=1.0 dB, corr=0.000, sr=no, ta=-2.7 us
+2025-12-05T18:29:23.874360 [PHY1   ] [I] [ 6121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=38.2 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.875287 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.893454 [PHY0   ] [I] [ 6140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.179, snr=-0.5 dB, corr=0.000, sr=no, ta=12.2 us
+2025-12-05T18:29:23.913282 [PHY0   ] [I] [ 6160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.140, snr=0.1 dB, corr=0.000, sr=no, ta=9.6 us
+2025-12-05T18:29:23.914376 [PHY1   ] [I] [ 6161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=36.0 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.915237 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.933592 [PHY0   ] [I] [ 6180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.154, snr=-0.8 dB, corr=0.000, sr=no, ta=6.5 us
+2025-12-05T18:29:23.953324 [PHY0   ] [I] [ 6200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.299, snr=0.1 dB, corr=0.000, sr=no, ta=9.6 us
+2025-12-05T18:29:23.954439 [PHY1   ] [I] [ 6201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=36.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.955271 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:23.973487 [PHY0   ] [I] [ 6220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.039, snr=0.0 dB, corr=0.000, sr=no, ta=-11.6 us
+2025-12-05T18:29:23.993303 [PHY0   ] [I] [ 6240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.097, snr=-0.5 dB, corr=0.000, sr=no, ta=13.9 us
+2025-12-05T18:29:23.994404 [PHY1   ] [I] [ 6241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=35.5 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:23.995314 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.013483 [PHY0   ] [I] [ 6260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.020, snr=-0.7 dB, corr=0.000, sr=no, ta=-5.6 us
+2025-12-05T18:29:24.033365 [PHY0   ] [I] [ 6280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.395, snr=-0.3 dB, corr=0.000, sr=no, ta=-6.6 us
+2025-12-05T18:29:24.034461 [PHY1   ] [I] [ 6281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=36.4 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.035338 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.053529 [PHY0   ] [I] [ 6300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.175, snr=-1.9 dB, corr=0.000, sr=no, ta=-15.1 us
+2025-12-05T18:29:24.073346 [PHY0   ] [I] [ 6320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.130, snr=-0.5 dB, corr=0.000, sr=no, ta=-7.2 us
+2025-12-05T18:29:24.074462 [PHY1   ] [I] [ 6321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=35.3 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.075356 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.093553 [PHY0   ] [I] [ 6340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.125, snr=-0.3 dB, corr=0.000, sr=no, ta=7.5 us
+2025-12-05T18:29:24.113395 [PHY0   ] [I] [ 6360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.033, snr=-0.0 dB, corr=0.000, sr=no, ta=5.8 us
+2025-12-05T18:29:24.114503 [PHY1   ] [I] [ 6361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.3 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.115419 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.133576 [PHY0   ] [I] [ 6380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.042, snr=0.4 dB, corr=0.000, sr=no, ta=-1.0 us
+2025-12-05T18:29:24.153422 [PHY0   ] [I] [ 6400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.125, snr=0.0 dB, corr=0.000, sr=no, ta=-3.2 us
+2025-12-05T18:29:24.154521 [PHY1   ] [I] [ 6401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=34.5 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.155345 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.173585 [PHY0   ] [I] [ 6420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.206, snr=-0.6 dB, corr=0.000, sr=no, ta=-12.8 us
+2025-12-05T18:29:24.193432 [PHY0   ] [I] [ 6440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.104, snr=-0.6 dB, corr=0.000, sr=no, ta=2.2 us
+2025-12-05T18:29:24.194546 [PHY1   ] [I] [ 6441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=35.2 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.195380 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.213617 [PHY0   ] [I] [ 6460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.256, snr=0.4 dB, corr=0.000, sr=no, ta=10.9 us
+2025-12-05T18:29:24.233445 [PHY0   ] [I] [ 6480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.176, snr=0.2 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:24.234569 [PHY1   ] [I] [ 6481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.9 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.235477 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.253223 [PHY0   ] [I] [ 6500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.030, snr=-0.3 dB, corr=0.000, sr=no, ta=-1.5 us
+2025-12-05T18:29:24.273436 [PHY0   ] [I] [ 6520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.134, snr=-0.3 dB, corr=0.000, sr=no, ta=-11.9 us
+2025-12-05T18:29:24.274549 [PHY1   ] [I] [ 6521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.8 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.275460 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.293196 [PHY0   ] [I] [ 6540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.123, snr=-0.5 dB, corr=0.000, sr=no, ta=-1.3 us
+2025-12-05T18:29:24.313419 [PHY0   ] [I] [ 6560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.104, snr=-0.7 dB, corr=0.000, sr=no, ta=-11.9 us
+2025-12-05T18:29:24.314591 [PHY1   ] [I] [ 6561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=37.3 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.315444 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.333324 [PHY0   ] [I] [ 6580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.079, snr=0.1 dB, corr=0.000, sr=no, ta=-2.9 us
+2025-12-05T18:29:24.353555 [PHY0   ] [I] [ 6600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.406, snr=0.8 dB, corr=0.063, sr=no, ta=6.5 us
+2025-12-05T18:29:24.354608 [PHY1   ] [I] [ 6601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=35.4 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.355177 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.373329 [PHY0   ] [I] [ 6620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.032, snr=0.2 dB, corr=0.000, sr=no, ta=10.5 us
+2025-12-05T18:29:24.393533 [PHY0   ] [I] [ 6640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.073, snr=-1.6 dB, corr=0.000, sr=no, ta=9.7 us
+2025-12-05T18:29:24.394644 [PHY1   ] [I] [ 6641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.395114 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.413366 [PHY0   ] [I] [ 6660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.176, snr=-0.2 dB, corr=0.000, sr=no, ta=-5.0 us
+2025-12-05T18:29:24.433520 [PHY0   ] [I] [ 6680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.179, snr=-0.4 dB, corr=0.000, sr=no, ta=-8.7 us
+2025-12-05T18:29:24.434637 [PHY1   ] [I] [ 6681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=33.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.435204 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.453387 [PHY0   ] [I] [ 6700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.386, snr=-1.2 dB, corr=0.000, sr=no, ta=-11.1 us
+2025-12-05T18:29:24.473567 [PHY0   ] [I] [ 6720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.102, snr=-0.1 dB, corr=0.000, sr=no, ta=-2.8 us
+2025-12-05T18:29:24.474335 [PHY1   ] [I] [ 6721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=35.2 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.475212 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.493386 [PHY0   ] [I] [ 6740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.093, snr=0.3 dB, corr=0.000, sr=no, ta=5.6 us
+2025-12-05T18:29:24.513634 [PHY0   ] [I] [ 6760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.477, snr=-0.5 dB, corr=-0.086, sr=no, ta=-9.0 us
+2025-12-05T18:29:24.514349 [PHY1   ] [I] [ 6761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=37.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.515272 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.533422 [PHY0   ] [I] [ 6780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.131, snr=0.4 dB, corr=0.000, sr=no, ta=4.1 us
+2025-12-05T18:29:24.553605 [PHY0   ] [I] [ 6800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.205, snr=-0.7 dB, corr=0.000, sr=no, ta=5.5 us
+2025-12-05T18:29:24.554377 [PHY1   ] [I] [ 6801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.555303 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.573464 [PHY0   ] [I] [ 6820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.007, snr=-0.2 dB, corr=0.000, sr=no, ta=3.2 us
+2025-12-05T18:29:24.593287 [PHY0   ] [I] [ 6840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.371, snr=0.6 dB, corr=0.000, sr=no, ta=-3.2 us
+2025-12-05T18:29:24.594379 [PHY1   ] [I] [ 6841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.7 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.595235 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.613511 [PHY0   ] [I] [ 6860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.438, snr=-1.0 dB, corr=-0.046, sr=no, ta=6.9 us
+2025-12-05T18:29:24.633248 [PHY0   ] [I] [ 6880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.304, snr=0.7 dB, corr=0.000, sr=no, ta=4.0 us
+2025-12-05T18:29:24.634355 [PHY1   ] [I] [ 6881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=31.6 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.635276 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.653453 [PHY0   ] [I] [ 6900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.078, snr=0.5 dB, corr=0.000, sr=no, ta=-9.6 us
+2025-12-05T18:29:24.673299 [PHY0   ] [I] [ 6920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.251, snr=0.5 dB, corr=0.000, sr=no, ta=8.8 us
+2025-12-05T18:29:24.674447 [PHY1   ] [I] [ 6921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.675312 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.693513 [PHY0   ] [I] [ 6940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.010, snr=-0.3 dB, corr=0.000, sr=no, ta=-10.1 us
+2025-12-05T18:29:24.713336 [PHY0   ] [I] [ 6960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.206, snr=0.2 dB, corr=0.000, sr=no, ta=5.2 us
+2025-12-05T18:29:24.714409 [PHY1   ] [I] [ 6961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.6 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.715348 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.733571 [PHY0   ] [I] [ 6980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.494, snr=0.3 dB, corr=0.085, sr=no, ta=9.9 us
+2025-12-05T18:29:24.753344 [PHY0   ] [I] [ 7000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.123, snr=-0.5 dB, corr=0.000, sr=no, ta=2.1 us
+2025-12-05T18:29:24.754461 [PHY1   ] [I] [ 7001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.8 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.755374 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.773538 [PHY0   ] [I] [ 7020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.057, snr=-0.2 dB, corr=0.000, sr=no, ta=6.6 us
+2025-12-05T18:29:24.793378 [PHY0   ] [I] [ 7040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.197, snr=0.1 dB, corr=0.000, sr=no, ta=-4.3 us
+2025-12-05T18:29:24.794499 [PHY1   ] [I] [ 7041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.7 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.795404 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.813560 [PHY0   ] [I] [ 7060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.119, snr=-0.3 dB, corr=0.000, sr=no, ta=-5.0 us
+2025-12-05T18:29:24.833406 [PHY0   ] [I] [ 7080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.130, snr=-0.5 dB, corr=0.000, sr=no, ta=-3.2 us
+2025-12-05T18:29:24.834508 [PHY1   ] [I] [ 7081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.1 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.835348 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.853592 [PHY0   ] [I] [ 7100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.146, snr=-2.1 dB, corr=0.000, sr=no, ta=-6.4 us
+2025-12-05T18:29:24.873408 [PHY0   ] [I] [ 7120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.314, snr=-0.6 dB, corr=0.000, sr=no, ta=1.3 us
+2025-12-05T18:29:24.874521 [PHY1   ] [I] [ 7121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.5 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.875400 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.893608 [PHY0   ] [I] [ 7140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.057, snr=-0.7 dB, corr=0.000, sr=no, ta=-3.7 us
+2025-12-05T18:29:24.913423 [PHY0   ] [I] [ 7160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.272, snr=-0.3 dB, corr=0.000, sr=no, ta=-5.8 us
+2025-12-05T18:29:24.914550 [PHY1   ] [I] [ 7161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.2 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.915466 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.933238 [PHY0   ] [I] [ 7180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.184, snr=-1.0 dB, corr=0.000, sr=no, ta=-8.2 us
+2025-12-05T18:29:24.953430 [PHY0   ] [I] [ 7200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.103, snr=-1.2 dB, corr=0.000, sr=no, ta=13.0 us
+2025-12-05T18:29:24.954546 [PHY1   ] [I] [ 7201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.9 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.955428 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:24.973281 [PHY0   ] [I] [ 7220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.249, snr=0.7 dB, corr=0.000, sr=no, ta=1.3 us
+2025-12-05T18:29:24.993495 [PHY0   ] [I] [ 7240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.071, snr=-0.1 dB, corr=0.000, sr=no, ta=-6.5 us
+2025-12-05T18:29:24.994584 [PHY1   ] [I] [ 7241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.7 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:24.995463 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.013156 [PHY0   ] [I] [ 7260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.100, snr=-0.3 dB, corr=0.000, sr=no, ta=-0.1 us
+2025-12-05T18:29:25.033388 [PHY0   ] [I] [ 7280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.174, snr=0.1 dB, corr=0.000, sr=no, ta=2.4 us
+2025-12-05T18:29:25.034478 [PHY1   ] [I] [ 7281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.9 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.035101 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.053348 [PHY0   ] [I] [ 7300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.217, snr=0.7 dB, corr=0.000, sr=no, ta=1.9 us
+2025-12-05T18:29:25.073507 [PHY0   ] [I] [ 7320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.187, snr=-0.3 dB, corr=0.000, sr=no, ta=-0.6 us
+2025-12-05T18:29:25.074645 [PHY1   ] [I] [ 7321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=35.4 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.075180 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.093376 [PHY0   ] [I] [ 7340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.323, snr=-0.2 dB, corr=0.000, sr=no, ta=8.4 us
+2025-12-05T18:29:25.113612 [PHY0   ] [I] [ 7360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.505, snr=-0.2 dB, corr=-0.102, sr=no, ta=-13.1 us
+2025-12-05T18:29:25.114680 [PHY1   ] [I] [ 7361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.4 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.115161 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.133416 [PHY0   ] [I] [ 7380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.243, snr=0.0 dB, corr=0.000, sr=no, ta=2.8 us
+2025-12-05T18:29:25.153585 [PHY0   ] [I] [ 7400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.124, snr=-0.8 dB, corr=0.000, sr=no, ta=-1.8 us
+2025-12-05T18:29:25.154366 [PHY1   ] [I] [ 7401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.155212 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.173388 [PHY0   ] [I] [ 7420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.004, snr=-0.3 dB, corr=0.000, sr=no, ta=2.8 us
+2025-12-05T18:29:25.193604 [PHY0   ] [I] [ 7440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.022, snr=-0.7 dB, corr=0.000, sr=no, ta=7.6 us
+2025-12-05T18:29:25.194373 [PHY1   ] [I] [ 7441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=36.1 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.195211 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.213440 [PHY0   ] [I] [ 7460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.086, snr=0.3 dB, corr=0.000, sr=no, ta=-8.9 us
+2025-12-05T18:29:25.233629 [PHY0   ] [I] [ 7480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.230, snr=-0.1 dB, corr=0.000, sr=no, ta=2.0 us
+2025-12-05T18:29:25.234386 [PHY1   ] [I] [ 7481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.9 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.235211 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.253465 [PHY0   ] [I] [ 7500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.131, snr=-2.2 dB, corr=0.000, sr=no, ta=-13.2 us
+2025-12-05T18:29:25.273296 [PHY0   ] [I] [ 7520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.440, snr=0.0 dB, corr=-0.114, sr=no, ta=2.3 us
+2025-12-05T18:29:25.274384 [PHY1   ] [I] [ 7521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=34.5 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.275250 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.293481 [PHY0   ] [I] [ 7540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.129, snr=-0.7 dB, corr=0.000, sr=no, ta=11.1 us
+2025-12-05T18:29:25.313294 [PHY0   ] [I] [ 7560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.276, snr=-0.0 dB, corr=0.000, sr=no, ta=-10.3 us
+2025-12-05T18:29:25.314432 [PHY1   ] [I] [ 7561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.7 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.315299 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.333489 [PHY0   ] [I] [ 7580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.056, snr=-0.1 dB, corr=0.000, sr=no, ta=-3.3 us
+2025-12-05T18:29:25.353368 [PHY0   ] [I] [ 7600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.419, snr=0.4 dB, corr=0.016, sr=no, ta=5.2 us
+2025-12-05T18:29:25.354443 [PHY1   ] [I] [ 7601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.5 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.355329 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.373518 [PHY0   ] [I] [ 7620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.109, snr=-0.5 dB, corr=0.000, sr=no, ta=3.9 us
+2025-12-05T18:29:25.393361 [PHY0   ] [I] [ 7640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.381, snr=-0.5 dB, corr=0.000, sr=no, ta=-22.1 us
+2025-12-05T18:29:25.394460 [PHY1   ] [I] [ 7641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.6 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.395286 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.413547 [PHY0   ] [I] [ 7660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.202, snr=-0.4 dB, corr=0.000, sr=no, ta=-3.9 us
+2025-12-05T18:29:25.433387 [PHY0   ] [I] [ 7680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.228, snr=0.2 dB, corr=0.000, sr=no, ta=-7.2 us
+2025-12-05T18:29:25.434493 [PHY1   ] [I] [ 7681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.9 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.435320 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.453559 [PHY0   ] [I] [ 7700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.048, snr=-0.2 dB, corr=0.000, sr=no, ta=-4.5 us
+2025-12-05T18:29:25.473408 [PHY0   ] [I] [ 7720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.064, snr=-0.6 dB, corr=0.000, sr=no, ta=24.6 us
+2025-12-05T18:29:25.474515 [PHY1   ] [I] [ 7721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.4 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.475367 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.493591 [PHY0   ] [I] [ 7740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.079, snr=-0.7 dB, corr=0.000, sr=no, ta=10.7 us
+2025-12-05T18:29:25.513390 [PHY0   ] [I] [ 7760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.238, snr=-0.6 dB, corr=0.000, sr=no, ta=14.2 us
+2025-12-05T18:29:25.514523 [PHY1   ] [I] [ 7761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=29.6 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.515441 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.533591 [PHY0   ] [I] [ 7780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.045, snr=0.1 dB, corr=0.000, sr=no, ta=-1.9 us
+2025-12-05T18:29:25.553430 [PHY0   ] [I] [ 7800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.082, snr=-0.0 dB, corr=0.000, sr=no, ta=1.6 us
+2025-12-05T18:29:25.554559 [PHY1   ] [I] [ 7801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.7 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.555375 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.573606 [PHY0   ] [I] [ 7820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.167, snr=0.0 dB, corr=0.000, sr=no, ta=-0.2 us
+2025-12-05T18:29:25.593467 [PHY0   ] [I] [ 7840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.018, snr=0.5 dB, corr=0.000, sr=no, ta=-2.5 us
+2025-12-05T18:29:25.594551 [PHY1   ] [I] [ 7841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.3 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.595408 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.613320 [PHY0   ] [I] [ 7860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.276, snr=-0.0 dB, corr=0.000, sr=no, ta=1.7 us
+2025-12-05T18:29:25.633469 [PHY0   ] [I] [ 7880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.374, snr=-1.0 dB, corr=0.000, sr=no, ta=0.1 us
+2025-12-05T18:29:25.634590 [PHY1   ] [I] [ 7881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.6 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.635438 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.653260 [PHY0   ] [I] [ 7900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.544, snr=0.2 dB, corr=-0.146, sr=no, ta=6.5 us
+2025-12-05T18:29:25.673439 [PHY0   ] [I] [ 7920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.119, snr=0.1 dB, corr=0.000, sr=no, ta=-1.8 us
+2025-12-05T18:29:25.674543 [PHY1   ] [I] [ 7921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.4 dB, corr=1.000, cqi=10 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.675490 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.693233 [PHY0   ] [I] [ 7940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.168, snr=0.1 dB, corr=0.000, sr=no, ta=4.3 us
+2025-12-05T18:29:25.713501 [PHY0   ] [I] [ 7960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.219, snr=0.2 dB, corr=0.000, sr=no, ta=14.8 us
+2025-12-05T18:29:25.714590 [PHY1   ] [I] [ 7961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=31.6 dB, corr=1.000, cqi=10 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.715201 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.733339 [PHY0   ] [I] [ 7980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.032, snr=-0.1 dB, corr=0.000, sr=no, ta=-3.0 us
+2025-12-05T18:29:25.753521 [PHY0   ] [I] [ 8000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.043, snr=-0.8 dB, corr=0.000, sr=no, ta=-4.7 us
+2025-12-05T18:29:25.754619 [PHY1   ] [I] [ 8001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.7 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.755131 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.773313 [PHY0   ] [I] [ 8020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.176, snr=-0.1 dB, corr=0.000, sr=no, ta=10.8 us
+2025-12-05T18:29:25.793544 [PHY0   ] [I] [ 8040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.269, snr=0.3 dB, corr=0.000, sr=no, ta=1.3 us
+2025-12-05T18:29:25.794643 [PHY1   ] [I] [ 8041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=28.7 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.795140 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.813431 [PHY0   ] [I] [ 8060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.401, snr=0.4 dB, corr=-0.080, sr=no, ta=-1.4 us
+2025-12-05T18:29:25.833463 [PHY0   ] [I] [ 8080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.134, snr=-0.3 dB, corr=0.000, sr=no, ta=5.5 us
+2025-12-05T18:29:25.834215 [PHY1   ] [I] [ 8081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=33.4 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.835196 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.853324 [PHY0   ] [I] [ 8100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.173, snr=-0.4 dB, corr=0.000, sr=no, ta=2.5 us
+2025-12-05T18:29:25.873512 [PHY0   ] [I] [ 8120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.283, snr=0.1 dB, corr=0.000, sr=no, ta=-11.9 us
+2025-12-05T18:29:25.874266 [PHY1   ] [I] [ 8121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.998, snr=31.4 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.875230 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.893348 [PHY0   ] [I] [ 8140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.330, snr=-0.6 dB, corr=0.000, sr=no, ta=-6.9 us
+2025-12-05T18:29:25.913529 [PHY0   ] [I] [ 8160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.035, snr=-0.8 dB, corr=0.000, sr=no, ta=-11.2 us
+2025-12-05T18:29:25.914285 [PHY1   ] [I] [ 8161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=29.6 dB, corr=1.000, cqi=9 (cc=0), ta=0.0 us
+2025-12-05T18:29:25.915299 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.933370 [PHY0   ] [I] [ 8180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.108, snr=-0.4 dB, corr=0.000, sr=no, ta=1.5 us
+2025-12-05T18:29:25.953178 [PHY0   ] [I] [ 8200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.100, snr=-0.8 dB, corr=0.000, sr=no, ta=-4.4 us
+2025-12-05T18:29:25.954248 [PHY1   ] [I] [ 8201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=29.1 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.955277 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:25.973452 [PHY0   ] [I] [ 8220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.082, snr=0.2 dB, corr=0.000, sr=no, ta=-2.8 us
+2025-12-05T18:29:25.993298 [PHY0   ] [I] [ 8240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.068, snr=0.3 dB, corr=0.000, sr=no, ta=-0.7 us
+2025-12-05T18:29:25.994423 [PHY1   ] [I] [ 8241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.9 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:25.995286 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.013478 [PHY0   ] [I] [ 8260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.103, snr=0.3 dB, corr=0.000, sr=no, ta=16.5 us
+2025-12-05T18:29:26.033327 [PHY0   ] [I] [ 8280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.000, snr=0.1 dB, corr=0.000, sr=no, ta=6.3 us
+2025-12-05T18:29:26.034439 [PHY1   ] [I] [ 8281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=28.5 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.035353 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.053506 [PHY0   ] [I] [ 8300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.286, snr=-0.4 dB, corr=0.000, sr=no, ta=-0.5 us
+2025-12-05T18:29:26.073341 [PHY0   ] [I] [ 8320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.115, snr=0.0 dB, corr=0.000, sr=no, ta=-6.2 us
+2025-12-05T18:29:26.074443 [PHY1   ] [I] [ 8321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.3 dB, corr=1.000, cqi=8 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.075313 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.093536 [PHY0   ] [I] [ 8340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.005, snr=0.0 dB, corr=0.000, sr=no, ta=18.5 us
+2025-12-05T18:29:26.113350 [PHY0   ] [I] [ 8360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.095, snr=-0.2 dB, corr=0.000, sr=no, ta=-7.2 us
+2025-12-05T18:29:26.114456 [PHY1   ] [I] [ 8361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=29.0 dB, corr=1.000, cqi=8 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.115347 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.133541 [PHY0   ] [I] [ 8380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.102, snr=-0.2 dB, corr=0.000, sr=no, ta=-0.4 us
+2025-12-05T18:29:26.153390 [PHY0   ] [I] [ 8400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.188, snr=-0.2 dB, corr=0.000, sr=no, ta=-6.3 us
+2025-12-05T18:29:26.154477 [PHY1   ] [I] [ 8401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.4 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.155395 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.173566 [PHY0   ] [I] [ 8420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.096, snr=0.1 dB, corr=0.000, sr=no, ta=1.5 us
+2025-12-05T18:29:26.193403 [PHY0   ] [I] [ 8440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.285, snr=-0.5 dB, corr=0.000, sr=no, ta=-6.0 us
+2025-12-05T18:29:26.194501 [PHY1   ] [I] [ 8441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.3 dB, corr=1.000, cqi=5 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.195424 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.213600 [PHY0   ] [I] [ 8460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.180, snr=-0.1 dB, corr=0.000, sr=no, ta=13.5 us
+2025-12-05T18:29:26.233401 [PHY0   ] [I] [ 8480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.107, snr=-0.2 dB, corr=0.000, sr=no, ta=7.8 us
+2025-12-05T18:29:26.234500 [PHY1   ] [I] [ 8481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.0 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.235455 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.253602 [PHY0   ] [I] [ 8500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.301, snr=-0.8 dB, corr=0.000, sr=no, ta=-7.2 us
+2025-12-05T18:29:26.273409 [PHY0   ] [I] [ 8520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.191, snr=-0.8 dB, corr=0.000, sr=no, ta=-2.2 us
+2025-12-05T18:29:26.274484 [PHY1   ] [I] [ 8521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=31.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.275403 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.293244 [PHY0   ] [I] [ 8540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.012, snr=-0.5 dB, corr=0.000, sr=no, ta=16.9 us
+2025-12-05T18:29:26.313481 [PHY0   ] [I] [ 8560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.138, snr=-0.8 dB, corr=0.000, sr=no, ta=4.7 us
+2025-12-05T18:29:26.314571 [PHY1   ] [I] [ 8561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.8 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.315505 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.333296 [PHY0   ] [I] [ 8580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.106, snr=-0.2 dB, corr=0.000, sr=no, ta=-2.8 us
+2025-12-05T18:29:26.353473 [PHY0   ] [I] [ 8600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.385, snr=-0.0 dB, corr=0.000, sr=no, ta=3.9 us
+2025-12-05T18:29:26.354592 [PHY1   ] [I] [ 8601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.3 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.355529 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.373316 [PHY0   ] [I] [ 8620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.016, snr=-1.7 dB, corr=0.000, sr=no, ta=4.4 us
+2025-12-05T18:29:26.393515 [PHY0   ] [I] [ 8640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.260, snr=-0.4 dB, corr=0.000, sr=no, ta=7.1 us
+2025-12-05T18:29:26.394637 [PHY1   ] [I] [ 8641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=32.9 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.395129 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.413341 [PHY0   ] [I] [ 8660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.086, snr=-0.6 dB, corr=0.000, sr=no, ta=-8.1 us
+2025-12-05T18:29:26.433515 [PHY0   ] [I] [ 8680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.168, snr=-1.2 dB, corr=0.000, sr=no, ta=2.0 us
+2025-12-05T18:29:26.434630 [PHY1   ] [I] [ 8681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=32.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.435175 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.453354 [PHY0   ] [I] [ 8700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.311, snr=-0.1 dB, corr=0.000, sr=no, ta=6.0 us
+2025-12-05T18:29:26.473540 [PHY0   ] [I] [ 8720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.072, snr=0.0 dB, corr=0.000, sr=no, ta=4.9 us
+2025-12-05T18:29:26.474642 [PHY1   ] [I] [ 8721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=32.4 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.475228 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.493373 [PHY0   ] [I] [ 8740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.109, snr=-0.4 dB, corr=0.000, sr=no, ta=2.1 us
+2025-12-05T18:29:26.513560 [PHY0   ] [I] [ 8760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.290, snr=0.0 dB, corr=0.000, sr=no, ta=5.3 us
+2025-12-05T18:29:26.514354 [PHY1   ] [I] [ 8761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.5 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.515185 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.533388 [PHY0   ] [I] [ 8780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.015, snr=-0.5 dB, corr=0.000, sr=no, ta=9.6 us
+2025-12-05T18:29:26.553587 [PHY0   ] [I] [ 8800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.039, snr=0.0 dB, corr=0.000, sr=no, ta=3.4 us
+2025-12-05T18:29:26.554330 [PHY1   ] [I] [ 8801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=29.2 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.555266 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.573420 [PHY0   ] [I] [ 8820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.149, snr=0.7 dB, corr=0.000, sr=no, ta=-10.8 us
+2025-12-05T18:29:26.593599 [PHY0   ] [I] [ 8840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.334, snr=-1.1 dB, corr=0.000, sr=no, ta=11.0 us
+2025-12-05T18:29:26.594362 [PHY1   ] [I] [ 8841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=29.3 dB, corr=1.000, cqi=6 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.595208 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.613446 [PHY0   ] [I] [ 8860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.016, snr=0.2 dB, corr=0.000, sr=no, ta=-15.1 us
+2025-12-05T18:29:26.633278 [PHY0   ] [I] [ 8880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.306, snr=-0.2 dB, corr=0.000, sr=no, ta=-3.1 us
+2025-12-05T18:29:26.634381 [PHY1   ] [I] [ 8881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.0 dB, corr=1.000, cqi=6 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.635255 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.653509 [PHY0   ] [I] [ 8900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.416, snr=-0.1 dB, corr=0.116, sr=no, ta=1.9 us
+2025-12-05T18:29:26.673183 [PHY0   ] [I] [ 8920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.030, snr=0.8 dB, corr=0.000, sr=no, ta=7.2 us
+2025-12-05T18:29:26.674294 [PHY1   ] [I] [ 8921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.9 dB, corr=1.000, cqi=5 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.675272 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.693397 [PHY0   ] [I] [ 8940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.368, snr=-0.2 dB, corr=0.000, sr=no, ta=-5.5 us
+2025-12-05T18:29:26.713239 [PHY0   ] [I] [ 8960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.094, snr=-0.2 dB, corr=0.000, sr=no, ta=-3.8 us
+2025-12-05T18:29:26.714355 [PHY1   ] [I] [ 8961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.8 dB, corr=1.000, cqi=8 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.715292 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.733426 [PHY0   ] [I] [ 8980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.305, snr=-0.7 dB, corr=0.000, sr=no, ta=-0.2 us
+2025-12-05T18:29:26.753258 [PHY0   ] [I] [ 9000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.090, snr=-0.6 dB, corr=0.000, sr=no, ta=-1.9 us
+2025-12-05T18:29:26.754375 [PHY1   ] [I] [ 9001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.3 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.755366 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.773442 [PHY0   ] [I] [ 9020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.331, snr=0.2 dB, corr=0.000, sr=no, ta=4.6 us
+2025-12-05T18:29:26.793280 [PHY0   ] [I] [ 9040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.127, snr=-0.1 dB, corr=0.000, sr=no, ta=-3.9 us
+2025-12-05T18:29:26.794389 [PHY1   ] [I] [ 9041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.4 dB, corr=1.000, cqi=9 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.795312 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.813471 [PHY0   ] [I] [ 9060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.178, snr=-0.1 dB, corr=0.000, sr=no, ta=12.6 us
+2025-12-05T18:29:26.833324 [PHY0   ] [I] [ 9080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.433, snr=0.4 dB, corr=-0.052, sr=no, ta=-6.1 us
+2025-12-05T18:29:26.834401 [PHY1   ] [I] [ 9081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.7 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.835393 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.853486 [PHY0   ] [I] [ 9100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.066, snr=-0.4 dB, corr=0.000, sr=no, ta=-9.9 us
+2025-12-05T18:29:26.873314 [PHY0   ] [I] [ 9120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.010, snr=0.1 dB, corr=0.000, sr=no, ta=-1.6 us
+2025-12-05T18:29:26.874415 [PHY1   ] [I] [ 9121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=30.7 dB, corr=1.000, cqi=9 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.875416 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.893492 [PHY0   ] [I] [ 9140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.329, snr=-0.2 dB, corr=0.000, sr=no, ta=-1.0 us
+2025-12-05T18:29:26.913373 [PHY0   ] [I] [ 9160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.512, snr=0.3 dB, corr=-0.109, sr=no, ta=-12.6 us
+2025-12-05T18:29:26.914436 [PHY1   ] [I] [ 9161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.5 dB, corr=1.000, cqi=8 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.915392 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.933530 [PHY0   ] [I] [ 9180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.026, snr=0.3 dB, corr=0.000, sr=no, ta=6.7 us
+2025-12-05T18:29:26.953403 [PHY0   ] [I] [ 9200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.445, snr=-0.5 dB, corr=0.078, sr=no, ta=-6.6 us
+2025-12-05T18:29:26.954471 [PHY1   ] [I] [ 9201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=30.8 dB, corr=1.000, cqi=9 (cc=0), ta=0.1 us
+2025-12-05T18:29:26.955422 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:26.973214 [PHY0   ] [I] [ 9220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.046, snr=-0.5 dB, corr=0.000, sr=no, ta=4.0 us
+2025-12-05T18:29:26.993382 [PHY0   ] [I] [ 9240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.172, snr=-0.6 dB, corr=0.000, sr=no, ta=-17.6 us
+2025-12-05T18:29:26.994496 [PHY1   ] [I] [ 9241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=31.5 dB, corr=1.000, cqi=9 (cc=0), ta=0.0 us
+2025-12-05T18:29:26.995490 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.013279 [PHY0   ] [I] [ 9260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.103, snr=-0.3 dB, corr=0.000, sr=no, ta=-11.8 us
+2025-12-05T18:29:27.033495 [PHY0   ] [I] [ 9280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.189, snr=-0.8 dB, corr=0.000, sr=no, ta=-13.8 us
+2025-12-05T18:29:27.034598 [PHY1   ] [I] [ 9281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.6 dB, corr=1.000, cqi=9 (cc=0), ta=0.0 us
+2025-12-05T18:29:27.035444 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.053314 [PHY0   ] [I] [ 9300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.074, snr=-0.1 dB, corr=0.000, sr=no, ta=-5.6 us
+2025-12-05T18:29:27.073488 [PHY0   ] [I] [ 9320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.186, snr=0.2 dB, corr=0.000, sr=no, ta=-2.7 us
+2025-12-05T18:29:27.074609 [PHY1   ] [I] [ 9321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=27.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.0 us
+2025-12-05T18:29:27.075178 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.093325 [PHY0   ] [I] [ 9340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.334, snr=0.1 dB, corr=0.000, sr=no, ta=3.2 us
+2025-12-05T18:29:27.113524 [PHY0   ] [I] [ 9360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.089, snr=-0.8 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:27.114628 [PHY1   ] [I] [ 9361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=28.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:27.115204 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.133379 [PHY0   ] [I] [ 9380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.238, snr=0.4 dB, corr=0.000, sr=no, ta=-3.4 us
+2025-12-05T18:29:27.153559 [PHY0   ] [I] [ 9400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.050, snr=-0.1 dB, corr=0.000, sr=no, ta=-10.5 us
+2025-12-05T18:29:27.154637 [PHY1   ] [I] [ 9401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=1.000, snr=31.0 dB, corr=1.000, cqi=7 (cc=0), ta=0.0 us
+2025-12-05T18:29:27.155149 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.173364 [PHY0   ] [I] [ 9420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.093, snr=-0.1 dB, corr=0.000, sr=no, ta=6.6 us
+2025-12-05T18:29:27.193562 [PHY0   ] [I] [ 9440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.348, snr=0.4 dB, corr=0.000, sr=no, ta=2.5 us
+2025-12-05T18:29:27.194339 [PHY1   ] [I] [ 9441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=29.2 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:27.195210 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.213439 [PHY0   ] [I] [ 9460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.415, snr=-0.2 dB, corr=-0.044, sr=no, ta=5.9 us
+2025-12-05T18:29:27.233537 [PHY0   ] [I] [ 9480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.001, snr=0.2 dB, corr=0.000, sr=no, ta=-0.4 us
+2025-12-05T18:29:27.234302 [PHY1   ] [I] [ 9481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.999, snr=31.6 dB, corr=1.000, cqi=7 (cc=0), ta=0.1 us
+2025-12-05T18:29:27.235245 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:27.253418 [PHY0   ] [I] [ 9500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.099, snr=-0.6 dB, corr=0.000, sr=no, ta=0.1 us
+2025-12-05T18:29:27.273610 [PHY0   ] [I] [ 9520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.174, snr=0.1 dB, corr=0.000, sr=no, ta=-14.9 us
+2025-12-05T18:29:27.274323 [PHY1   ] [I] [ 9521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.106, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=-9.8 us
+2025-12-05T18:29:27.293405 [PHY0   ] [I] [ 9540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.031, snr=-1.0 dB, corr=0.000, sr=no, ta=-4.6 us
+2025-12-05T18:29:27.313281 [PHY0   ] [I] [ 9560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.301, snr=-0.3 dB, corr=0.000, sr=no, ta=-8.1 us
+2025-12-05T18:29:27.314343 [PHY1   ] [I] [ 9561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.350, snr=0.7 dB, corr=0.000, cqi=0 (cc=0), ta=7.6 us
+2025-12-05T18:29:27.333446 [PHY0   ] [I] [ 9580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.140, snr=-0.7 dB, corr=0.000, sr=no, ta=0.9 us
+2025-12-05T18:29:27.353284 [PHY0   ] [I] [ 9600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.177, snr=-0.3 dB, corr=0.000, sr=no, ta=-4.3 us
+2025-12-05T18:29:27.354375 [PHY1   ] [I] [ 9601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.075, snr=0.3 dB, corr=0.000, cqi=0 (cc=0), ta=-0.6 us
+2025-12-05T18:29:27.373494 [PHY0   ] [I] [ 9620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.030, snr=0.3 dB, corr=0.000, sr=no, ta=2.2 us
+2025-12-05T18:29:27.393298 [PHY0   ] [I] [ 9640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.125, snr=0.4 dB, corr=0.000, sr=no, ta=-5.9 us
+2025-12-05T18:29:27.394395 [PHY1   ] [I] [ 9641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.071, snr=-1.0 dB, corr=0.000, cqi=0 (cc=0), ta=18.8 us
+2025-12-05T18:29:27.413534 [PHY0   ] [I] [ 9660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.413, snr=-0.2 dB, corr=0.066, sr=no, ta=-11.7 us
+2025-12-05T18:29:27.433327 [PHY0   ] [I] [ 9680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.127, snr=-0.1 dB, corr=0.000, sr=no, ta=-1.6 us
+2025-12-05T18:29:27.434409 [PHY1   ] [I] [ 9681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.162, snr=-1.5 dB, corr=0.000, cqi=0 (cc=0), ta=-2.5 us
+2025-12-05T18:29:27.453514 [PHY0   ] [I] [ 9700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.115, snr=-0.2 dB, corr=0.000, sr=no, ta=0.9 us
+2025-12-05T18:29:27.473354 [PHY0   ] [I] [ 9720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.103, snr=-1.1 dB, corr=0.000, sr=no, ta=-0.8 us
+2025-12-05T18:29:27.474414 [PHY1   ] [I] [ 9721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.071, snr=-1.9 dB, corr=0.000, cqi=0 (cc=0), ta=-16.6 us
+2025-12-05T18:29:27.493548 [PHY0   ] [I] [ 9740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.070, snr=-1.2 dB, corr=0.000, sr=no, ta=-2.4 us
+2025-12-05T18:29:27.513378 [PHY0   ] [I] [ 9760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.047, snr=0.2 dB, corr=0.000, sr=no, ta=-6.7 us
+2025-12-05T18:29:27.514449 [PHY1   ] [I] [ 9761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.107, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=-8.1 us
+2025-12-05T18:29:27.533582 [PHY0   ] [I] [ 9780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.233, snr=-0.4 dB, corr=0.000, sr=no, ta=-6.9 us
+2025-12-05T18:29:27.553407 [PHY0   ] [I] [ 9800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.123, snr=0.1 dB, corr=0.000, sr=no, ta=-10.0 us
+2025-12-05T18:29:27.554458 [PHY1   ] [I] [ 9801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.027, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=0.5 us
+2025-12-05T18:29:27.573583 [PHY0   ] [I] [ 9820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.349, snr=-1.2 dB, corr=0.000, sr=no, ta=-12.0 us
+2025-12-05T18:29:27.593415 [PHY0   ] [I] [ 9840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.202, snr=-0.8 dB, corr=0.000, sr=no, ta=-7.7 us
+2025-12-05T18:29:27.594481 [PHY1   ] [I] [ 9841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.005, snr=-0.3 dB, corr=0.000, cqi=0 (cc=0), ta=5.5 us
+2025-12-05T18:29:27.613607 [PHY0   ] [I] [ 9860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.095, snr=0.2 dB, corr=0.000, sr=no, ta=-7.1 us
+2025-12-05T18:29:27.633431 [PHY0   ] [I] [ 9880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.168, snr=-0.2 dB, corr=0.000, sr=no, ta=15.3 us
+2025-12-05T18:29:27.634498 [PHY1   ] [I] [ 9881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.323, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=1.3 us
+2025-12-05T18:29:27.653275 [PHY0   ] [I] [ 9900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.006, snr=-0.5 dB, corr=0.000, sr=no, ta=-0.0 us
+2025-12-05T18:29:27.673465 [PHY0   ] [I] [ 9920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.024, snr=-0.8 dB, corr=0.000, sr=no, ta=-5.2 us
+2025-12-05T18:29:27.674522 [PHY1   ] [I] [ 9921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.177, snr=-0.5 dB, corr=0.000, cqi=0 (cc=0), ta=-14.2 us
+2025-12-05T18:29:27.693252 [PHY0   ] [I] [ 9940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.179, snr=-0.4 dB, corr=0.000, sr=no, ta=-5.2 us
+2025-12-05T18:29:27.713435 [PHY0   ] [I] [ 9960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.492, snr=-0.3 dB, corr=0.112, sr=no, ta=-5.4 us
+2025-12-05T18:29:27.714480 [PHY1   ] [I] [ 9961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.291, snr=0.5 dB, corr=0.000, cqi=0 (cc=0), ta=-1.4 us
+2025-12-05T18:29:27.733298 [PHY0   ] [I] [ 9980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.259, snr=-1.2 dB, corr=0.000, sr=no, ta=-2.3 us
+2025-12-05T18:29:27.753540 [PHY0   ] [I] [10000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.453, snr=-0.9 dB, corr=0.010, sr=no, ta=0.6 us
+2025-12-05T18:29:27.754563 [PHY1   ] [I] [10001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.121, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=-3.4 us
+2025-12-05T18:29:27.773316 [PHY0   ] [I] [10020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.382, snr=0.3 dB, corr=0.000, sr=no, ta=7.2 us
+2025-12-05T18:29:27.793524 [PHY0   ] [I] [10040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.159, snr=0.8 dB, corr=0.000, sr=no, ta=5.8 us
+2025-12-05T18:29:27.794572 [PHY1   ] [I] [10041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.078, snr=1.5 dB, corr=0.000, cqi=0 (cc=0), ta=-5.7 us
+2025-12-05T18:29:27.813349 [PHY0   ] [I] [10060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.061, snr=-1.0 dB, corr=0.000, sr=no, ta=-9.2 us
+2025-12-05T18:29:27.833543 [PHY0   ] [I] [10080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.006, snr=-0.3 dB, corr=0.000, sr=no, ta=-5.6 us
+2025-12-05T18:29:27.834596 [PHY1   ] [I] [10081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.148, snr=1.0 dB, corr=0.000, cqi=0 (cc=0), ta=13.9 us
+2025-12-05T18:29:27.853365 [PHY0   ] [I] [10100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.314, snr=-0.1 dB, corr=0.000, sr=no, ta=-6.5 us
+2025-12-05T18:29:27.873570 [PHY0   ] [I] [10120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.077, snr=0.2 dB, corr=0.000, sr=no, ta=6.4 us
+2025-12-05T18:29:27.874303 [PHY1   ] [I] [10121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.200, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-3.2 us
+2025-12-05T18:29:27.893394 [PHY0   ] [I] [10140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.148, snr=-1.4 dB, corr=0.000, sr=no, ta=-6.2 us
+2025-12-05T18:29:27.913539 [PHY0   ] [I] [10160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.314, snr=-0.2 dB, corr=0.000, sr=no, ta=-10.3 us
+2025-12-05T18:29:27.914269 [PHY1   ] [I] [10161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.218, snr=0.8 dB, corr=0.000, cqi=0 (cc=0), ta=17.0 us
+2025-12-05T18:29:27.933413 [PHY0   ] [I] [10180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.013, snr=-1.1 dB, corr=0.000, sr=no, ta=-11.6 us
+2025-12-05T18:29:27.953597 [PHY0   ] [I] [10200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.101, snr=-2.4 dB, corr=0.000, sr=no, ta=-7.0 us
+2025-12-05T18:29:27.954319 [PHY1   ] [I] [10201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.261, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-14.8 us
+2025-12-05T18:29:27.973420 [PHY0   ] [I] [10220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.053, snr=0.0 dB, corr=0.000, sr=no, ta=1.9 us
+2025-12-05T18:29:27.993279 [PHY0   ] [I] [    0] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.009, snr=-0.6 dB, corr=0.000, sr=no, ta=6.8 us
+2025-12-05T18:29:27.994328 [PHY1   ] [I] [    1] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.103, snr=-0.2 dB, corr=0.000, cqi=0 (cc=0), ta=0.4 us
+2025-12-05T18:29:28.013458 [PHY0   ] [I] [   20] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.107, snr=-0.0 dB, corr=0.000, sr=no, ta=5.7 us
+2025-12-05T18:29:28.033282 [PHY0   ] [I] [   40] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.336, snr=-1.0 dB, corr=0.000, sr=no, ta=15.7 us
+2025-12-05T18:29:28.034369 [PHY1   ] [I] [   41] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.075, snr=0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-3.0 us
+2025-12-05T18:29:28.053480 [PHY0   ] [I] [   60] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.257, snr=-0.2 dB, corr=0.000, sr=no, ta=-7.7 us
+2025-12-05T18:29:28.073305 [PHY0   ] [I] [   80] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.046, snr=-1.3 dB, corr=0.000, sr=no, ta=-1.4 us
+2025-12-05T18:29:28.074378 [PHY1   ] [I] [   81] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.298, snr=-0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-8.9 us
+2025-12-05T18:29:28.093512 [PHY0   ] [I] [  100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.008, snr=0.3 dB, corr=0.000, sr=no, ta=2.6 us
+2025-12-05T18:29:28.113341 [PHY0   ] [I] [  120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.136, snr=-0.0 dB, corr=0.000, sr=no, ta=9.0 us
+2025-12-05T18:29:28.114408 [PHY1   ] [I] [  121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.292, snr=-0.3 dB, corr=0.000, cqi=0 (cc=0), ta=5.7 us
+2025-12-05T18:29:28.133518 [PHY0   ] [I] [  140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.281, snr=-0.2 dB, corr=0.000, sr=no, ta=7.2 us
+2025-12-05T18:29:28.153350 [PHY0   ] [I] [  160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.022, snr=-1.1 dB, corr=0.000, sr=no, ta=3.2 us
+2025-12-05T18:29:28.154427 [PHY1   ] [I] [  161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.084, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=11.2 us
+2025-12-05T18:29:28.173576 [PHY0   ] [I] [  180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.497, snr=-0.3 dB, corr=0.037, sr=no, ta=12.8 us
+2025-12-05T18:29:28.193385 [PHY0   ] [I] [  200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.131, snr=-0.3 dB, corr=0.000, sr=no, ta=1.3 us
+2025-12-05T18:29:28.194503 [PHY1   ] [I] [  201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.442, snr=-0.3 dB, corr=0.536, cqi=9 (cc=0), ta=4.8 us
+2025-12-05T18:29:28.195332 [RRC    ] [D] Radio-Link uplink state for rnti=0x46: crc_res=1, consecutive_ko=0
+2025-12-05T18:29:28.213505 [PHY0   ] [I] [  220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.076, snr=-0.2 dB, corr=0.000, sr=no, ta=-3.1 us
+2025-12-05T18:29:28.233399 [PHY0   ] [I] [  240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.041, snr=-0.1 dB, corr=0.000, sr=no, ta=3.5 us
+2025-12-05T18:29:28.234471 [PHY1   ] [I] [  241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.103, snr=0.6 dB, corr=0.000, cqi=0 (cc=0), ta=-4.3 us
+2025-12-05T18:29:28.253567 [PHY0   ] [I] [  260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.195, snr=0.4 dB, corr=0.000, sr=no, ta=0.5 us
+2025-12-05T18:29:28.273405 [PHY0   ] [I] [  280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.333, snr=-0.4 dB, corr=0.000, sr=no, ta=-14.7 us
+2025-12-05T18:29:28.274474 [PHY1   ] [I] [  281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.148, snr=1.0 dB, corr=0.000, cqi=0 (cc=0), ta=0.5 us
+2025-12-05T18:29:28.293551 [PHY0   ] [I] [  300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.128, snr=0.4 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:28.313449 [PHY0   ] [I] [  320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.424, snr=0.3 dB, corr=-0.200, sr=no, ta=-11.1 us
+2025-12-05T18:29:28.314491 [PHY1   ] [I] [  321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.079, snr=0.4 dB, corr=0.000, cqi=0 (cc=0), ta=-6.1 us
+2025-12-05T18:29:28.333285 [PHY0   ] [I] [  340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.005, snr=0.1 dB, corr=0.000, sr=no, ta=0.7 us
+2025-12-05T18:29:28.353476 [PHY0   ] [I] [  360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.049, snr=-0.3 dB, corr=0.000, sr=no, ta=7.4 us
+2025-12-05T18:29:28.354516 [PHY1   ] [I] [  361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.159, snr=0.3 dB, corr=0.000, cqi=0 (cc=0), ta=9.6 us
+2025-12-05T18:29:28.373302 [PHY0   ] [I] [  380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.195, snr=-0.7 dB, corr=0.000, sr=no, ta=0.6 us
+2025-12-05T18:29:28.393489 [PHY0   ] [I] [  400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.174, snr=-0.2 dB, corr=0.000, sr=no, ta=8.3 us
+2025-12-05T18:29:28.394591 [PHY1   ] [I] [  401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.402, snr=1.3 dB, corr=0.484, cqi=7 (cc=0), ta=-8.2 us
+2025-12-05T18:29:28.413295 [PHY0   ] [I] [  420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.086, snr=-0.0 dB, corr=0.000, sr=no, ta=-1.8 us
+2025-12-05T18:29:28.433493 [PHY0   ] [I] [  440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.124, snr=-0.3 dB, corr=0.000, sr=no, ta=8.5 us
+2025-12-05T18:29:28.434557 [PHY1   ] [I] [  441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.122, snr=-1.0 dB, corr=0.000, cqi=0 (cc=0), ta=9.1 us
+2025-12-05T18:29:28.453319 [PHY0   ] [I] [  460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.229, snr=-0.3 dB, corr=0.000, sr=no, ta=-1.7 us
+2025-12-05T18:29:28.473512 [PHY0   ] [I] [  480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.241, snr=-0.4 dB, corr=0.000, sr=no, ta=9.2 us
+2025-12-05T18:29:28.474573 [PHY1   ] [I] [  481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.177, snr=0.5 dB, corr=0.000, cqi=0 (cc=0), ta=3.9 us
+2025-12-05T18:29:28.493356 [PHY0   ] [I] [  500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.132, snr=-0.3 dB, corr=0.000, sr=no, ta=0.4 us
+2025-12-05T18:29:28.513543 [PHY0   ] [I] [  520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.053, snr=0.1 dB, corr=0.000, sr=no, ta=-1.2 us
+2025-12-05T18:29:28.514587 [PHY1   ] [I] [  521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.050, snr=0.7 dB, corr=0.000, cqi=0 (cc=0), ta=9.3 us
+2025-12-05T18:29:28.533383 [PHY0   ] [I] [  540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.075, snr=-1.5 dB, corr=0.000, sr=no, ta=7.3 us
+2025-12-05T18:29:28.553556 [PHY0   ] [I] [  560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.093, snr=-1.6 dB, corr=0.000, sr=no, ta=6.7 us
+2025-12-05T18:29:28.554336 [PHY1   ] [I] [  561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.451, snr=-0.3 dB, corr=0.406, cqi=15 (cc=0), ta=20.7 us
+2025-12-05T18:29:28.573381 [PHY0   ] [I] [  580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.055, snr=-0.7 dB, corr=0.000, sr=no, ta=-8.1 us
+2025-12-05T18:29:28.593567 [PHY0   ] [I] [  600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.073, snr=-0.2 dB, corr=0.000, sr=no, ta=15.6 us
+2025-12-05T18:29:28.594282 [PHY1   ] [I] [  601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.037, snr=0.8 dB, corr=0.000, cqi=0 (cc=0), ta=15.5 us
+2025-12-05T18:29:28.613412 [PHY0   ] [I] [  620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.319, snr=0.2 dB, corr=0.000, sr=no, ta=16.4 us
+2025-12-05T18:29:28.633609 [PHY0   ] [I] [  640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.386, snr=-0.1 dB, corr=0.000, sr=no, ta=10.4 us
+2025-12-05T18:29:28.634314 [PHY1   ] [I] [  641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.100, snr=0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-3.3 us
+2025-12-05T18:29:28.653437 [PHY0   ] [I] [  660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.146, snr=-0.2 dB, corr=0.000, sr=no, ta=4.5 us
+2025-12-05T18:29:28.673292 [PHY0   ] [I] [  680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.117, snr=-1.0 dB, corr=0.000, sr=no, ta=17.4 us
+2025-12-05T18:29:28.674334 [PHY1   ] [I] [  681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.155, snr=1.1 dB, corr=0.000, cqi=0 (cc=0), ta=2.9 us
+2025-12-05T18:29:28.693440 [PHY0   ] [I] [  700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.037, snr=-0.3 dB, corr=0.000, sr=no, ta=-1.6 us
+2025-12-05T18:29:28.713243 [PHY0   ] [I] [  720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.229, snr=-0.3 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:28.714321 [PHY1   ] [I] [  721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.260, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=4.3 us
+2025-12-05T18:29:28.733499 [PHY0   ] [I] [  740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.394, snr=0.3 dB, corr=0.000, sr=no, ta=-6.1 us
+2025-12-05T18:29:28.753312 [PHY0   ] [I] [  760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.175, snr=-0.3 dB, corr=0.000, sr=no, ta=-22.2 us
+2025-12-05T18:29:28.754376 [PHY1   ] [I] [  761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.020, snr=0.3 dB, corr=0.000, cqi=0 (cc=0), ta=-15.1 us
+2025-12-05T18:29:28.773508 [PHY0   ] [I] [  780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.228, snr=0.5 dB, corr=0.000, sr=no, ta=7.5 us
+2025-12-05T18:29:28.793317 [PHY0   ] [I] [  800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.238, snr=0.7 dB, corr=0.000, sr=no, ta=21.7 us
+2025-12-05T18:29:28.794389 [PHY1   ] [I] [  801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.322, snr=2.3 dB, corr=0.000, cqi=0 (cc=0), ta=-4.8 us
+2025-12-05T18:29:28.813517 [PHY0   ] [I] [  820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.167, snr=-0.1 dB, corr=0.000, sr=no, ta=-8.8 us
+2025-12-05T18:29:28.833396 [PHY0   ] [I] [  840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.555, snr=0.3 dB, corr=-0.034, sr=no, ta=-2.1 us
+2025-12-05T18:29:28.834449 [PHY1   ] [I] [  841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.592, snr=0.7 dB, corr=0.312, cqi=5 (cc=0), ta=-8.8 us
+2025-12-05T18:29:28.853545 [PHY0   ] [I] [  860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.220, snr=0.1 dB, corr=0.000, sr=no, ta=-2.9 us
+2025-12-05T18:29:28.873365 [PHY0   ] [I] [  880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.177, snr=-0.8 dB, corr=0.000, sr=no, ta=2.6 us
+2025-12-05T18:29:28.874466 [PHY1   ] [I] [  881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.527, snr=1.7 dB, corr=0.467, cqi=15 (cc=0), ta=-1.4 us
+2025-12-05T18:29:28.893550 [PHY0   ] [I] [  900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.021, snr=-0.3 dB, corr=0.000, sr=no, ta=4.5 us
+2025-12-05T18:29:28.913378 [PHY0   ] [I] [  920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.079, snr=-0.6 dB, corr=0.000, sr=no, ta=1.2 us
+2025-12-05T18:29:28.914456 [PHY1   ] [I] [  921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.259, snr=-0.5 dB, corr=0.000, cqi=0 (cc=0), ta=16.3 us
+2025-12-05T18:29:28.933575 [PHY0   ] [I] [  940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.163, snr=-0.7 dB, corr=0.000, sr=no, ta=6.6 us
+2025-12-05T18:29:28.953403 [PHY0   ] [I] [  960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.173, snr=-0.3 dB, corr=0.000, sr=no, ta=5.2 us
+2025-12-05T18:29:28.954481 [PHY1   ] [I] [  961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.040, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-4.2 us
+2025-12-05T18:29:28.973619 [PHY0   ] [I] [  980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.055, snr=-1.0 dB, corr=0.000, sr=no, ta=4.4 us
+2025-12-05T18:29:28.993398 [PHY0   ] [I] [ 1000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.005, snr=0.1 dB, corr=0.000, sr=no, ta=2.9 us
+2025-12-05T18:29:28.994439 [PHY1   ] [I] [ 1001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.228, snr=-1.6 dB, corr=0.000, cqi=0 (cc=0), ta=-3.8 us
+2025-12-05T18:29:29.013284 [PHY0   ] [I] [ 1020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.038, snr=-0.3 dB, corr=0.000, sr=no, ta=10.0 us
+2025-12-05T18:29:29.033484 [PHY0   ] [I] [ 1040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.008, snr=0.4 dB, corr=0.000, sr=no, ta=-8.2 us
+2025-12-05T18:29:29.034520 [PHY1   ] [I] [ 1041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.052, snr=0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-9.9 us
+2025-12-05T18:29:29.053274 [PHY0   ] [I] [ 1060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.258, snr=-0.6 dB, corr=0.000, sr=no, ta=-11.2 us
+2025-12-05T18:29:29.073491 [PHY0   ] [I] [ 1080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.009, snr=-0.4 dB, corr=0.000, sr=no, ta=-9.6 us
+2025-12-05T18:29:29.074532 [PHY1   ] [I] [ 1081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.172, snr=-0.3 dB, corr=0.000, cqi=0 (cc=0), ta=8.9 us
+2025-12-05T18:29:29.093292 [PHY0   ] [I] [ 1100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.010, snr=-1.0 dB, corr=0.000, sr=no, ta=4.4 us
+2025-12-05T18:29:29.113494 [PHY0   ] [I] [ 1120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.009, snr=-0.6 dB, corr=0.000, sr=no, ta=12.8 us
+2025-12-05T18:29:29.114549 [PHY1   ] [I] [ 1121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.178, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=3.9 us
+2025-12-05T18:29:29.133339 [PHY0   ] [I] [ 1140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.016, snr=0.6 dB, corr=0.000, sr=no, ta=2.9 us
+2025-12-05T18:29:29.153523 [PHY0   ] [I] [ 1160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.177, snr=0.1 dB, corr=0.000, sr=no, ta=7.3 us
+2025-12-05T18:29:29.154574 [PHY1   ] [I] [ 1161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.272, snr=0.8 dB, corr=0.000, cqi=0 (cc=0), ta=-0.9 us
+2025-12-05T18:29:29.173355 [PHY0   ] [I] [ 1180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.051, snr=-0.7 dB, corr=0.000, sr=no, ta=-11.9 us
+2025-12-05T18:29:29.193525 [PHY0   ] [I] [ 1200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.061, snr=-0.0 dB, corr=0.000, sr=no, ta=-6.7 us
+2025-12-05T18:29:29.194602 [PHY1   ] [I] [ 1201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.035, snr=-0.6 dB, corr=0.000, cqi=0 (cc=0), ta=-16.3 us
+2025-12-05T18:29:29.213412 [PHY0   ] [I] [ 1220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.458, snr=-0.5 dB, corr=-0.040, sr=no, ta=3.8 us
+2025-12-05T18:29:29.233523 [PHY0   ] [I] [ 1240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.067, snr=-0.1 dB, corr=0.000, sr=no, ta=5.4 us
+2025-12-05T18:29:29.234273 [PHY1   ] [I] [ 1241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.041, snr=0.3 dB, corr=0.000, cqi=0 (cc=0), ta=14.7 us
+2025-12-05T18:29:29.253379 [PHY0   ] [I] [ 1260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.046, snr=-0.6 dB, corr=0.000, sr=no, ta=1.9 us
+2025-12-05T18:29:29.273598 [PHY0   ] [I] [ 1280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.060, snr=-1.0 dB, corr=0.000, sr=no, ta=-3.5 us
+2025-12-05T18:29:29.274300 [PHY1   ] [I] [ 1281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.145, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=0.2 us
+2025-12-05T18:29:29.293417 [PHY0   ] [I] [ 1300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.060, snr=-1.4 dB, corr=0.000, sr=no, ta=-1.4 us
+2025-12-05T18:29:29.313546 [PHY0   ] [I] [ 1320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.008, snr=-0.3 dB, corr=0.000, sr=no, ta=7.7 us
+2025-12-05T18:29:29.314272 [PHY1   ] [I] [ 1321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.023, snr=-1.9 dB, corr=0.000, cqi=0 (cc=0), ta=-1.3 us
+2025-12-05T18:29:29.333423 [PHY0   ] [I] [ 1340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.175, snr=-0.5 dB, corr=0.000, sr=no, ta=-6.0 us
+2025-12-05T18:29:29.353234 [PHY0   ] [I] [ 1360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.248, snr=0.0 dB, corr=0.000, sr=no, ta=-2.6 us
+2025-12-05T18:29:29.354366 [PHY1   ] [I] [ 1361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.496, snr=-0.5 dB, corr=0.439, cqi=12 (cc=0), ta=13.0 us
+2025-12-05T18:29:29.373449 [PHY0   ] [I] [ 1380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.134, snr=0.6 dB, corr=0.000, sr=no, ta=-7.1 us
+2025-12-05T18:29:29.393290 [PHY0   ] [I] [ 1400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.036, snr=-0.3 dB, corr=0.000, sr=no, ta=5.4 us
+2025-12-05T18:29:29.394361 [PHY1   ] [I] [ 1401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.242, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=3.2 us
+2025-12-05T18:29:29.413481 [PHY0   ] [I] [ 1420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.049, snr=0.4 dB, corr=0.000, sr=no, ta=2.2 us
+2025-12-05T18:29:29.433320 [PHY0   ] [I] [ 1440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.009, snr=-1.6 dB, corr=0.000, sr=no, ta=-18.5 us
+2025-12-05T18:29:29.434387 [PHY1   ] [I] [ 1441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.122, snr=2.1 dB, corr=0.000, cqi=0 (cc=0), ta=1.9 us
+2025-12-05T18:29:29.453502 [PHY0   ] [I] [ 1460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.068, snr=0.1 dB, corr=0.000, sr=no, ta=9.1 us
+2025-12-05T18:29:29.473328 [PHY0   ] [I] [ 1480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.031, snr=-0.4 dB, corr=0.000, sr=no, ta=-3.7 us
+2025-12-05T18:29:29.474412 [PHY1   ] [I] [ 1481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.120, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=-10.5 us
+2025-12-05T18:29:29.493520 [PHY0   ] [I] [ 1500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.219, snr=0.2 dB, corr=0.000, sr=no, ta=-5.2 us
+2025-12-05T18:29:29.513329 [PHY0   ] [I] [ 1520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.146, snr=-0.2 dB, corr=0.000, sr=no, ta=-1.1 us
+2025-12-05T18:29:29.514426 [PHY1   ] [I] [ 1521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.402, snr=0.6 dB, corr=0.317, cqi=10 (cc=0), ta=-7.4 us
+2025-12-05T18:29:29.533547 [PHY0   ] [I] [ 1540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.025, snr=-0.4 dB, corr=0.000, sr=no, ta=0.3 us
+2025-12-05T18:29:29.553399 [PHY0   ] [I] [ 1560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.404, snr=0.1 dB, corr=-0.021, sr=no, ta=-6.1 us
+2025-12-05T18:29:29.554450 [PHY1   ] [I] [ 1561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.044, snr=0.5 dB, corr=0.000, cqi=0 (cc=0), ta=-10.4 us
+2025-12-05T18:29:29.573609 [PHY0   ] [I] [ 1580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.528, snr=0.4 dB, corr=0.110, sr=no, ta=12.9 us
+2025-12-05T18:29:29.593383 [PHY0   ] [I] [ 1600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.232, snr=0.5 dB, corr=0.000, sr=no, ta=-1.6 us
+2025-12-05T18:29:29.594472 [PHY1   ] [I] [ 1601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.227, snr=0.6 dB, corr=0.000, cqi=0 (cc=0), ta=-4.2 us
+2025-12-05T18:29:29.613575 [PHY0   ] [I] [ 1620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.101, snr=-0.3 dB, corr=0.000, sr=no, ta=-7.6 us
+2025-12-05T18:29:29.633416 [PHY0   ] [I] [ 1640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.370, snr=-1.6 dB, corr=0.000, sr=no, ta=1.3 us
+2025-12-05T18:29:29.634495 [PHY1   ] [I] [ 1641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.371, snr=-0.1 dB, corr=0.000, cqi=0 (cc=0), ta=3.7 us
+2025-12-05T18:29:29.653603 [PHY0   ] [I] [ 1660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.086, snr=-0.2 dB, corr=0.000, sr=no, ta=2.3 us
+2025-12-05T18:29:29.673415 [PHY0   ] [I] [ 1680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.016, snr=0.2 dB, corr=0.000, sr=no, ta=16.8 us
+2025-12-05T18:29:29.674508 [PHY1   ] [I] [ 1681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.281, snr=0.6 dB, corr=0.000, cqi=0 (cc=0), ta=5.5 us
+2025-12-05T18:29:29.693276 [PHY0   ] [I] [ 1700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.275, snr=-0.3 dB, corr=0.000, sr=no, ta=11.5 us
+2025-12-05T18:29:29.713414 [PHY0   ] [I] [ 1720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.546, snr=0.5 dB, corr=-0.044, sr=no, ta=-2.5 us
+2025-12-05T18:29:29.714485 [PHY1   ] [I] [ 1721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.025, snr=1.2 dB, corr=0.000, cqi=0 (cc=0), ta=8.8 us
+2025-12-05T18:29:29.733160 [PHY0   ] [I] [ 1740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.008, snr=-0.9 dB, corr=0.000, sr=no, ta=0.9 us
+2025-12-05T18:29:29.753502 [PHY0   ] [I] [ 1760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.105, snr=-0.4 dB, corr=0.000, sr=no, ta=0.0 us
+2025-12-05T18:29:29.754553 [PHY1   ] [I] [ 1761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.080, snr=0.3 dB, corr=0.000, cqi=0 (cc=0), ta=-1.6 us
+2025-12-05T18:29:29.773323 [PHY0   ] [I] [ 1780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.173, snr=-0.2 dB, corr=0.000, sr=no, ta=-12.4 us
+2025-12-05T18:29:29.793506 [PHY0   ] [I] [ 1800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.021, snr=-0.4 dB, corr=0.000, sr=no, ta=0.9 us
+2025-12-05T18:29:29.794562 [PHY1   ] [I] [ 1801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.220, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=11.3 us
+2025-12-05T18:29:29.813295 [PHY0   ] [I] [ 1820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.067, snr=-1.7 dB, corr=0.000, sr=no, ta=-9.1 us
+2025-12-05T18:29:29.833532 [PHY0   ] [I] [ 1840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.050, snr=0.3 dB, corr=0.000, sr=no, ta=-11.3 us
+2025-12-05T18:29:29.834588 [PHY1   ] [I] [ 1841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.391, snr=1.5 dB, corr=0.000, cqi=0 (cc=0), ta=12.4 us
+2025-12-05T18:29:29.853361 [PHY0   ] [I] [ 1860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.147, snr=0.1 dB, corr=0.000, sr=no, ta=9.2 us
+2025-12-05T18:29:29.873566 [PHY0   ] [I] [ 1880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.114, snr=-0.2 dB, corr=0.000, sr=no, ta=0.9 us
+2025-12-05T18:29:29.874617 [PHY1   ] [I] [ 1881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.107, snr=-1.1 dB, corr=0.000, cqi=0 (cc=0), ta=-22.7 us
+2025-12-05T18:29:29.893393 [PHY0   ] [I] [ 1900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.082, snr=-0.7 dB, corr=0.000, sr=no, ta=-5.2 us
+2025-12-05T18:29:29.913583 [PHY0   ] [I] [ 1920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.069, snr=-0.2 dB, corr=0.000, sr=no, ta=-8.1 us
+2025-12-05T18:29:29.914288 [PHY1   ] [I] [ 1921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.370, snr=-1.4 dB, corr=0.000, cqi=0 (cc=0), ta=15.7 us
+2025-12-05T18:29:29.933422 [PHY0   ] [I] [ 1940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.051, snr=-0.1 dB, corr=0.000, sr=no, ta=8.8 us
+2025-12-05T18:29:29.953596 [PHY0   ] [I] [ 1960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.038, snr=-0.2 dB, corr=0.000, sr=no, ta=-10.1 us
+2025-12-05T18:29:29.954315 [PHY1   ] [I] [ 1961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.007, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=-7.8 us
+2025-12-05T18:29:29.973435 [PHY0   ] [I] [ 1980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.061, snr=0.5 dB, corr=0.000, sr=no, ta=5.5 us
+2025-12-05T18:29:29.993608 [PHY0   ] [I] [ 2000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.153, snr=-0.6 dB, corr=0.000, sr=no, ta=1.9 us
+2025-12-05T18:29:29.994337 [PHY1   ] [I] [ 2001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.205, snr=-0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-5.4 us
+2025-12-05T18:29:30.013438 [PHY0   ] [I] [ 2020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.328, snr=0.0 dB, corr=0.000, sr=no, ta=5.7 us
+2025-12-05T18:29:30.033270 [PHY0   ] [I] [ 2040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.192, snr=1.0 dB, corr=0.000, sr=no, ta=-5.8 us
+2025-12-05T18:29:30.034355 [PHY1   ] [I] [ 2041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.010, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=-16.4 us
+2025-12-05T18:29:30.053464 [PHY0   ] [I] [ 2060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.276, snr=0.4 dB, corr=0.000, sr=no, ta=-7.0 us
+2025-12-05T18:29:30.073211 [PHY0   ] [I] [ 2080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.051, snr=-0.3 dB, corr=0.000, sr=no, ta=9.6 us
+2025-12-05T18:29:30.074342 [PHY1   ] [I] [ 2081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.031, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=0.9 us
+2025-12-05T18:29:30.093461 [PHY0   ] [I] [ 2100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.014, snr=-0.2 dB, corr=0.000, sr=no, ta=-6.4 us
+2025-12-05T18:29:30.113272 [PHY0   ] [I] [ 2120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.338, snr=-0.2 dB, corr=0.000, sr=no, ta=-5.1 us
+2025-12-05T18:29:30.114376 [PHY1   ] [I] [ 2121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.313, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=-15.2 us
+2025-12-05T18:29:30.133407 [PHY0   ] [I] [ 2140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.167, snr=-0.5 dB, corr=0.000, sr=no, ta=-3.8 us
+2025-12-05T18:29:30.153295 [PHY0   ] [I] [ 2160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.146, snr=-1.1 dB, corr=0.000, sr=no, ta=2.2 us
+2025-12-05T18:29:30.154482 [PHY1   ] [I] [ 2161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.370, snr=0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-10.6 us
+2025-12-05T18:29:30.173487 [PHY0   ] [I] [ 2180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.111, snr=-0.4 dB, corr=0.000, sr=no, ta=-8.5 us
+2025-12-05T18:29:30.193285 [PHY0   ] [I] [ 2200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.164, snr=-0.3 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:30.194386 [PHY1   ] [I] [ 2201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.258, snr=0.0 dB, corr=0.000, cqi=0 (cc=0), ta=6.2 us
+2025-12-05T18:29:30.213496 [PHY0   ] [I] [ 2220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.088, snr=0.0 dB, corr=0.000, sr=no, ta=7.9 us
+2025-12-05T18:29:30.233267 [PHY0   ] [I] [ 2240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.060, snr=-0.8 dB, corr=0.000, sr=no, ta=2.4 us
+2025-12-05T18:29:30.234362 [PHY1   ] [I] [ 2241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.285, snr=0.5 dB, corr=0.000, cqi=0 (cc=0), ta=2.4 us
+2025-12-05T18:29:30.253485 [PHY0   ] [I] [ 2260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.113, snr=-0.8 dB, corr=0.000, sr=no, ta=11.0 us
+2025-12-05T18:29:30.273344 [PHY0   ] [I] [ 2280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.125, snr=-0.1 dB, corr=0.000, sr=no, ta=10.9 us
+2025-12-05T18:29:30.274397 [PHY1   ] [I] [ 2281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.102, snr=-0.9 dB, corr=0.000, cqi=0 (cc=0), ta=3.0 us
+2025-12-05T18:29:30.293503 [PHY0   ] [I] [ 2300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.110, snr=0.4 dB, corr=0.000, sr=no, ta=-2.0 us
+2025-12-05T18:29:30.313359 [PHY0   ] [I] [ 2320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.046, snr=-1.3 dB, corr=0.000, sr=no, ta=4.7 us
+2025-12-05T18:29:30.314418 [PHY1   ] [I] [ 2321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.144, snr=1.3 dB, corr=0.000, cqi=0 (cc=0), ta=3.3 us
+2025-12-05T18:29:30.333560 [PHY0   ] [I] [ 2340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.070, snr=-0.4 dB, corr=0.000, sr=no, ta=17.2 us
+2025-12-05T18:29:30.353366 [PHY0   ] [I] [ 2360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.090, snr=-0.2 dB, corr=0.000, sr=no, ta=-6.4 us
+2025-12-05T18:29:30.354436 [PHY1   ] [I] [ 2361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.229, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=11.4 us
+2025-12-05T18:29:30.373223 [PHY0   ] [I] [ 2380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.127, snr=-0.9 dB, corr=0.000, sr=no, ta=-4.9 us
+2025-12-05T18:29:30.393398 [PHY0   ] [I] [ 2400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.360, snr=-1.3 dB, corr=0.000, sr=no, ta=8.7 us
+2025-12-05T18:29:30.394506 [PHY1   ] [I] [ 2401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.642, snr=1.2 dB, corr=0.370, cqi=6 (cc=0), ta=-6.4 us
+2025-12-05T18:29:30.413227 [PHY0   ] [I] [ 2420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.267, snr=0.6 dB, corr=0.000, sr=no, ta=5.1 us
+2025-12-05T18:29:30.433416 [PHY0   ] [I] [ 2440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.094, snr=0.4 dB, corr=0.000, sr=no, ta=-5.4 us
+2025-12-05T18:29:30.434504 [PHY1   ] [I] [ 2441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.347, snr=0.1 dB, corr=0.000, cqi=0 (cc=0), ta=14.5 us
+2025-12-05T18:29:30.453210 [PHY0   ] [I] [ 2460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.024, snr=0.2 dB, corr=0.000, sr=no, ta=2.4 us
+2025-12-05T18:29:30.473445 [PHY0   ] [I] [ 2480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.062, snr=-0.4 dB, corr=0.000, sr=no, ta=3.9 us
+2025-12-05T18:29:30.474535 [PHY1   ] [I] [ 2481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.055, snr=0.7 dB, corr=0.000, cqi=0 (cc=0), ta=-6.5 us
+2025-12-05T18:29:30.493273 [PHY0   ] [I] [ 2500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.091, snr=-0.5 dB, corr=0.000, sr=no, ta=6.4 us
+2025-12-05T18:29:30.513521 [PHY0   ] [I] [ 2520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.088, snr=-0.1 dB, corr=0.000, sr=no, ta=14.7 us
+2025-12-05T18:29:30.514560 [PHY1   ] [I] [ 2521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.109, snr=-0.0 dB, corr=0.000, cqi=0 (cc=0), ta=5.8 us
+2025-12-05T18:29:30.533349 [PHY0   ] [I] [ 2540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.013, snr=-0.3 dB, corr=0.000, sr=no, ta=6.9 us
+2025-12-05T18:29:30.553591 [PHY0   ] [I] [ 2560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.491, snr=0.6 dB, corr=0.003, sr=no, ta=-8.5 us
+2025-12-05T18:29:30.554593 [PHY1   ] [I] [ 2561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.223, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=22.6 us
+2025-12-05T18:29:30.573431 [PHY0   ] [I] [ 2580] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.476, snr=-0.6 dB, corr=-0.020, sr=no, ta=-3.5 us
+2025-12-05T18:29:30.593560 [PHY0   ] [I] [ 2600] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.307, snr=-1.1 dB, corr=0.000, sr=no, ta=10.3 us
+2025-12-05T18:29:30.594305 [PHY1   ] [I] [ 2601] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.080, snr=-1.4 dB, corr=0.000, cqi=0 (cc=0), ta=-17.8 us
+2025-12-05T18:29:30.613392 [PHY0   ] [I] [ 2620] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.143, snr=-1.2 dB, corr=0.000, sr=no, ta=2.1 us
+2025-12-05T18:29:30.633562 [PHY0   ] [I] [ 2640] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.208, snr=-0.8 dB, corr=0.000, sr=no, ta=4.5 us
+2025-12-05T18:29:30.634290 [PHY1   ] [I] [ 2641] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.358, snr=-0.4 dB, corr=0.000, cqi=0 (cc=0), ta=-10.2 us
+2025-12-05T18:29:30.653418 [PHY0   ] [I] [ 2660] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.141, snr=-1.0 dB, corr=0.000, sr=no, ta=-2.6 us
+2025-12-05T18:29:30.673646 [PHY0   ] [I] [ 2680] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.427, snr=-0.0 dB, corr=0.016, sr=no, ta=-3.1 us
+2025-12-05T18:29:30.674361 [PHY1   ] [I] [ 2681] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.696, snr=-0.3 dB, corr=0.250, cqi=5 (cc=0), ta=-9.3 us
+2025-12-05T18:29:30.693422 [PHY0   ] [I] [ 2700] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.119, snr=-0.2 dB, corr=0.000, sr=no, ta=4.0 us
+2025-12-05T18:29:30.713304 [PHY0   ] [I] [ 2720] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.406, snr=-0.2 dB, corr=0.018, sr=no, ta=-0.9 us
+2025-12-05T18:29:30.714336 [PHY1   ] [I] [ 2721] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.020, snr=-0.3 dB, corr=0.000, cqi=0 (cc=0), ta=-8.4 us
+2025-12-05T18:29:30.733400 [PHY0   ] [I] [ 2740] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.288, snr=-0.3 dB, corr=0.000, sr=no, ta=1.1 us
+2025-12-05T18:29:30.753273 [PHY0   ] [I] [ 2760] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.072, snr=0.2 dB, corr=0.000, sr=no, ta=4.6 us
+2025-12-05T18:29:30.754353 [PHY1   ] [I] [ 2761] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.160, snr=-0.5 dB, corr=0.000, cqi=0 (cc=0), ta=-7.8 us
+2025-12-05T18:29:30.773480 [PHY0   ] [I] [ 2780] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.230, snr=-0.2 dB, corr=0.000, sr=no, ta=-8.6 us
+2025-12-05T18:29:30.793298 [PHY0   ] [I] [ 2800] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.188, snr=0.1 dB, corr=0.000, sr=no, ta=12.6 us
+2025-12-05T18:29:30.794394 [PHY1   ] [I] [ 2801] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.172, snr=1.6 dB, corr=0.000, cqi=0 (cc=0), ta=-10.4 us
+2025-12-05T18:29:30.813455 [PHY0   ] [I] [ 2820] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.045, snr=1.2 dB, corr=0.000, sr=no, ta=15.1 us
+2025-12-05T18:29:30.833279 [PHY0   ] [I] [ 2840] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.293, snr=-0.0 dB, corr=0.000, sr=no, ta=-7.4 us
+2025-12-05T18:29:30.834353 [PHY1   ] [I] [ 2841] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.067, snr=1.4 dB, corr=0.000, cqi=0 (cc=0), ta=-2.6 us
+2025-12-05T18:29:30.853511 [PHY0   ] [I] [ 2860] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.059, snr=0.1 dB, corr=0.000, sr=no, ta=6.8 us
+2025-12-05T18:29:30.873362 [PHY0   ] [I] [ 2880] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.548, snr=-0.1 dB, corr=0.043, sr=no, ta=-3.9 us
+2025-12-05T18:29:30.874408 [PHY1   ] [I] [ 2881] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.346, snr=1.5 dB, corr=0.000, cqi=0 (cc=0), ta=0.8 us
+2025-12-05T18:29:30.893492 [PHY0   ] [I] [ 2900] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.206, snr=0.1 dB, corr=0.000, sr=no, ta=-13.1 us
+2025-12-05T18:29:30.913375 [PHY0   ] [I] [ 2920] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.148, snr=0.5 dB, corr=0.000, sr=no, ta=-11.6 us
+2025-12-05T18:29:30.914434 [PHY1   ] [I] [ 2921] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.012, snr=-0.6 dB, corr=0.000, cqi=0 (cc=0), ta=5.2 us
+2025-12-05T18:29:30.933536 [PHY0   ] [I] [ 2940] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.279, snr=-0.1 dB, corr=0.000, sr=no, ta=-11.0 us
+2025-12-05T18:29:30.953357 [PHY0   ] [I] [ 2960] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.388, snr=-0.0 dB, corr=0.000, sr=no, ta=7.6 us
+2025-12-05T18:29:30.954439 [PHY1   ] [I] [ 2961] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.158, snr=-0.7 dB, corr=0.000, cqi=0 (cc=0), ta=-10.9 us
+2025-12-05T18:29:30.973560 [PHY0   ] [I] [ 2980] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.256, snr=0.5 dB, corr=0.000, sr=no, ta=-4.7 us
+2025-12-05T18:29:30.993481 [PHY0   ] [I] [ 3000] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.067, snr=0.0 dB, corr=0.000, sr=no, ta=-13.4 us
+2025-12-05T18:29:30.994583 [PHY1   ] [I] [ 3001] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.136, snr=-1.2 dB, corr=0.000, cqi=0 (cc=0), ta=-11.9 us
+2025-12-05T18:29:31.013647 [PHY0   ] [I] [ 3020] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.541, snr=0.6 dB, corr=-0.065, sr=no, ta=9.3 us
+2025-12-05T18:29:31.033440 [PHY0   ] [I] [ 3040] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.123, snr=0.7 dB, corr=0.000, sr=no, ta=11.1 us
+2025-12-05T18:29:31.034509 [PHY1   ] [I] [ 3041] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.322, snr=0.4 dB, corr=0.000, cqi=0 (cc=0), ta=-3.5 us
+2025-12-05T18:29:31.053268 [PHY0   ] [I] [ 3060] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.100, snr=-1.1 dB, corr=0.000, sr=no, ta=6.5 us
+2025-12-05T18:29:31.073481 [PHY0   ] [I] [ 3080] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.051, snr=-1.9 dB, corr=0.000, sr=no, ta=-6.0 us
+2025-12-05T18:29:31.074522 [PHY1   ] [I] [ 3081] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.162, snr=2.1 dB, corr=0.000, cqi=0 (cc=0), ta=-5.9 us
+2025-12-05T18:29:31.093286 [PHY0   ] [I] [ 3100] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.125, snr=-0.4 dB, corr=0.000, sr=no, ta=2.3 us
+2025-12-05T18:29:31.113487 [PHY0   ] [I] [ 3120] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.101, snr=-0.8 dB, corr=0.000, sr=no, ta=14.8 us
+2025-12-05T18:29:31.114542 [PHY1   ] [I] [ 3121] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.175, snr=-0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-11.2 us
+2025-12-05T18:29:31.133322 [PHY0   ] [I] [ 3140] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.017, snr=0.2 dB, corr=0.000, sr=no, ta=-2.8 us
+2025-12-05T18:29:31.153513 [PHY0   ] [I] [ 3160] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.041, snr=-0.9 dB, corr=0.000, sr=no, ta=9.1 us
+2025-12-05T18:29:31.154587 [PHY1   ] [I] [ 3161] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.169, snr=-0.3 dB, corr=0.000, cqi=0 (cc=0), ta=3.8 us
+2025-12-05T18:29:31.173307 [PHY0   ] [I] [ 3180] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.077, snr=-0.7 dB, corr=0.000, sr=no, ta=-0.2 us
+2025-12-05T18:29:31.193504 [PHY0   ] [I] [ 3200] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.146, snr=0.2 dB, corr=0.000, sr=no, ta=5.7 us
+2025-12-05T18:29:31.194560 [PHY1   ] [I] [ 3201] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.072, snr=-0.2 dB, corr=0.000, cqi=0 (cc=0), ta=0.3 us
+2025-12-05T18:29:31.213324 [PHY0   ] [I] [ 3220] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.008, snr=-0.4 dB, corr=0.000, sr=no, ta=5.0 us
+2025-12-05T18:29:31.233473 [PHY0   ] [I] [ 3240] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.014, snr=-0.1 dB, corr=0.000, sr=no, ta=-7.6 us
+2025-12-05T18:29:31.234558 [PHY1   ] [I] [ 3241] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.162, snr=0.0 dB, corr=0.000, cqi=0 (cc=0), ta=3.5 us
+2025-12-05T18:29:31.253284 [PHY0   ] [I] [ 3260] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.102, snr=0.1 dB, corr=0.000, sr=no, ta=-1.6 us
+2025-12-05T18:29:31.273514 [PHY0   ] [I] [ 3280] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.073, snr=-0.5 dB, corr=0.000, sr=no, ta=-14.9 us
+2025-12-05T18:29:31.274248 [PHY1   ] [I] [ 3281] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.158, snr=1.5 dB, corr=0.000, cqi=0 (cc=0), ta=21.4 us
+2025-12-05T18:29:31.293339 [PHY0   ] [I] [ 3300] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.120, snr=0.1 dB, corr=0.000, sr=no, ta=-17.3 us
+2025-12-05T18:29:31.313509 [PHY0   ] [I] [ 3320] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.273, snr=-0.7 dB, corr=0.000, sr=no, ta=5.7 us
+2025-12-05T18:29:31.314186 [PHY1   ] [I] [ 3321] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.048, snr=-0.2 dB, corr=0.000, cqi=0 (cc=0), ta=-17.6 us
+2025-12-05T18:29:31.333308 [PHY0   ] [I] [ 3340] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.048, snr=-0.3 dB, corr=0.000, sr=no, ta=0.1 us
+2025-12-05T18:29:31.353517 [PHY0   ] [I] [ 3360] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.297, snr=-0.3 dB, corr=0.000, sr=no, ta=10.1 us
+2025-12-05T18:29:31.354261 [PHY1   ] [I] [ 3361] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.087, snr=-0.2 dB, corr=0.000, cqi=0 (cc=0), ta=20.3 us
+2025-12-05T18:29:31.373367 [PHY0   ] [I] [ 3380] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.076, snr=-1.0 dB, corr=0.000, sr=no, ta=13.3 us
+2025-12-05T18:29:31.393208 [PHY0   ] [I] [ 3400] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.171, snr=-0.7 dB, corr=0.000, sr=no, ta=3.7 us
+2025-12-05T18:29:31.394311 [PHY1   ] [I] [ 3401] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.176, snr=-0.6 dB, corr=0.000, cqi=0 (cc=0), ta=-6.6 us
+2025-12-05T18:29:31.413443 [PHY0   ] [I] [ 3420] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.230, snr=-0.5 dB, corr=0.000, sr=no, ta=-12.5 us
+2025-12-05T18:29:31.433293 [PHY0   ] [I] [ 3440] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.683, snr=0.2 dB, corr=0.046, sr=no, ta=-6.9 us
+2025-12-05T18:29:31.434328 [PHY1   ] [I] [ 3441] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.173, snr=-1.6 dB, corr=0.000, cqi=0 (cc=0), ta=-10.8 us
+2025-12-05T18:29:31.453442 [PHY0   ] [I] [ 3460] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.013, snr=-0.5 dB, corr=0.000, sr=no, ta=-11.5 us
+2025-12-05T18:29:31.473256 [PHY0   ] [I] [ 3480] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.273, snr=-0.4 dB, corr=0.000, sr=no, ta=8.7 us
+2025-12-05T18:29:31.474362 [PHY1   ] [I] [ 3481] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.210, snr=0.7 dB, corr=0.000, cqi=0 (cc=0), ta=-8.0 us
+2025-12-05T18:29:31.493468 [PHY0   ] [I] [ 3500] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.048, snr=-0.1 dB, corr=0.000, sr=no, ta=2.0 us
+2025-12-05T18:29:31.507541 [S1AP   ] [I] SCTP Notification 8005
+2025-12-05T18:29:31.507543 [S1AP   ] [I] SCTP Association Shutdown. Association: 0
+2025-12-05T18:29:31.507562 [S1AP   ] [I] Restarting S1 connection
+2025-12-05T18:29:31.507595 [COMN   ] [D] [    0] RxSockets: Socket fd=16 has been successfully removed
+2025-12-05T18:29:31.507600 [COMN   ] [D] [    0] RxSockets: Socket fd=16 has been successfully removed
+2025-12-05T18:29:31.507637 [COMN   ] [D] [    0] Socket=16 was closed.
+2025-12-05T18:29:31.507640 [RRC    ] [I] Releasing E-RABs for 0x46
+2025-12-05T18:29:31.507650 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2025-12-05T18:29:31.507784 [S1AP   ] [I] Connecting to MME 127.0.1.100:36412
+2025-12-05T18:29:31.507825 [COMN   ] [D] [    0] Opened SCTP socket=16
+2025-12-05T18:29:31.507849 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2025-12-05T18:29:31.507854 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2025-12-05T18:29:31.507875 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2025-12-05T18:29:31.507876 [S1AP   ] [I] SCTP socket opened. fd=16
+2025-12-05T18:29:31.507986 [COMN   ] [I] [    0] Failed to establish socket connection to 127.0.1.100
+2025-12-05T18:29:31.508089 [S1AP   ] [I] Proc "MME Connection" - Could not connected to MME. Aborting
+2025-12-05T18:29:31.508090 [S1AP   ] [I] Proc "MME Connection" - Failed to initiate S1 connection. Attempting reconnection in 10 seconds
+2025-12-05T18:29:31.508099 [COMN   ] [W] [    0] RxSockets: The socket fd=16 to be removed does not exist
+2025-12-05T18:29:31.508109 [COMN   ] [D] [    0] Socket=16 was closed.
+2025-12-05T18:29:31.508110 [S1AP   ] [I] Proc "MME Connection" - S1AP socket closed.
+2025-12-05T18:29:31.508221 [RRC    ] [I] Received Release Complete rnti=0x46
+2025-12-05T18:29:31.508232 [RLC    ] [I] Cleared buffer rnti=0x46
+2025-12-05T18:29:31.508247 [RRC    ] [I] Tx SRB1 PDU, rnti=0x46 - rrcConnectionRelease (2 B)
+    0000: 28 02
+2025-12-05T18:29:31.508266 [RRC    ] [D] Content:
+[
+  {
+    "DL-DCCH-Message": {
+      "message": {
+        "c1": {
+          "rrcConnectionRelease": {
+            "rrc-TransactionIdentifier": 0,
+            "criticalExtensions": {
+              "c1": {
+                "rrcConnectionRelease-r8": {
+                  "releaseCause": "other"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]
+2025-12-05T18:29:31.511634 [PDCP   ] [I] TX SRB1 PDU, SN=2, integrity=none, encryption=none
+    0000: 02 28 02 00 00 00 00
+2025-12-05T18:29:31.511637 [RLC    ] [I] SRB1: Tx SDU (7 B, PDCP_SN=2 tx_sdu_queue_len=1)
+    0000: 02 28 02 00 00 00 00
+2025-12-05T18:29:31.512218 [MAC    ] [I] [ 3519] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(1, 2), n_rtx=0, cfi=1, tbs=15, buffer=14/0, tti_tx_dl=3523
+2025-12-05T18:29:31.512233 [RLC    ] [I] SRB1: Tx PDU SN=2 (9 B)
+    0000: a0 02 02 28 02 00 00 00 00
+2025-12-05T18:29:31.512244 [MAC    ] [I] [ 3519] 0x46 DL LCID=1 len=9
+2025-12-05T18:29:31.512275 [PHY1   ] [I] [ 3519] PDCCH: cc=0, rnti=0x46, f=1, cce= 2, L=1, rbg=0x1000, pid=0, mcs={4}, ndi={0}, tpc_pucch=1, tti_tx_dl=3523
+2025-12-05T18:29:31.512303 [PHY1   ] [I] [ 3519] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={15}, mod={2}, rv={0}, tti_tx_dl=3523
+2025-12-05T18:29:31.513236 [PHY0   ] [I] [ 3520] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.101, snr=1.2 dB, corr=0.000, sr=no, ta=1.7 us
+2025-12-05T18:29:31.514330 [PHY1   ] [I] [ 3521] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.025, snr=0.5 dB, corr=0.000, cqi=0 (cc=0), ta=-5.3 us
+2025-12-05T18:29:31.520298 [MAC    ] [I] [ 3527] SCHED: DL adaptive link: rnti=0x46, cqi=9, last_mcs=4, cqi_offset=-0.014000
+2025-12-05T18:29:31.520309 [PHY1   ] [I] [ 3527] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=14, dmrs_corr=0.015, snr=-0.1 dB, corr=0.000, ack=invalid, ta=-0.8 us
+2025-12-05T18:29:31.520331 [MAC    ] [I] [ 3527] SCHED: DL retx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(1, 2), n_rtx=1, cfi=1, tbs=15, buffer=0/0, tti_tx_dl=3531
+2025-12-05T18:29:31.520353 [PHY1   ] [I] [ 3527] PDCCH: cc=0, rnti=0x46, f=1, cce= 2, L=1, rbg=0x1000, pid=0, mcs={4}, ndi={0}, tpc_pucch=1, tti_tx_dl=3531
+2025-12-05T18:29:31.520371 [PHY1   ] [I] [ 3527] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={15}, mod={2}, rv={2}, tti_tx_dl=3531
+2025-12-05T18:29:31.521317 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=0, consecutive_ko=0
+2025-12-05T18:29:31.528516 [MAC    ] [I] [ 3535] SCHED: DL adaptive link: rnti=0x46, cqi=9, last_mcs=4, cqi_offset=-0.033000
+2025-12-05T18:29:31.528525 [PHY1   ] [I] [ 3535] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=14, dmrs_corr=0.163, snr=-0.1 dB, corr=0.000, ack=invalid, ta=1.3 us
+2025-12-05T18:29:31.528549 [MAC    ] [I] [ 3535] SCHED: DL retx rnti=0x46, cc=0, pid=0, mask=0x0400, dci=(1, 4), n_rtx=2, cfi=3, tbs=15, buffer=0/0, tti_tx_dl=3539
+2025-12-05T18:29:31.528571 [PHY1   ] [I] [ 3535] PDCCH: cc=0, rnti=0x46, f=1, cce= 4, L=1, rbg=0x400, pid=0, mcs={4}, ndi={0}, tpc_pucch=1, tti_tx_dl=3539
+2025-12-05T18:29:31.528596 [PHY1   ] [I] [ 3535] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=252, tbs={15}, mod={2}, rv={3}, tti_tx_dl=3539
+2025-12-05T18:29:31.529118 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=0, consecutive_ko=1
+2025-12-05T18:29:31.533512 [PHY0   ] [I] [ 3540] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.024, snr=-0.2 dB, corr=0.000, sr=no, ta=-2.1 us
+2025-12-05T18:29:31.536286 [MAC    ] [I] [ 3543] SCHED: DL adaptive link: rnti=0x46, cqi=9, last_mcs=4, cqi_offset=-0.052000
+2025-12-05T18:29:31.536296 [PHY1   ] [I] [ 3543] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=16, dmrs_corr=0.045, snr=-1.0 dB, corr=0.000, ack=invalid, ta=-2.8 us
+2025-12-05T18:29:31.536318 [MAC    ] [I] [ 3543] SCHED: DL retx rnti=0x46, cc=0, pid=0, mask=0x0400, dci=(1, 0), n_rtx=3, cfi=1, tbs=15, buffer=0/0, tti_tx_dl=3547
+2025-12-05T18:29:31.536340 [PHY1   ] [I] [ 3543] PDCCH: cc=0, rnti=0x46, f=1, cce= 0, L=1, rbg=0x400, pid=0, mcs={4}, ndi={0}, tpc_pucch=1, tti_tx_dl=3547
+2025-12-05T18:29:31.536359 [PHY1   ] [I] [ 3543] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={15}, mod={2}, rv={1}, tti_tx_dl=3547
+2025-12-05T18:29:31.537233 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=0, consecutive_ko=2
+2025-12-05T18:29:31.544479 [MAC    ] [I] [ 3551] SCHED: DL adaptive link: rnti=0x46, cqi=9, last_mcs=4, cqi_offset=-0.071000
+2025-12-05T18:29:31.544488 [PHY1   ] [I] [ 3551] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=12, dmrs_corr=0.264, snr=-0.2 dB, corr=0.000, ack=invalid, ta=-4.0 us
+2025-12-05T18:29:31.544491 [MAC    ] [I] [ 3551] SCHED: discarding DL TB=0 pid=0, tti=3547, maximum number of retx exceeded (4)
+2025-12-05T18:29:31.545469 [RRC    ] [D] Radio-Link downlink state for rnti=0x46: crc_res=0, consecutive_ko=3
+2025-12-05T18:29:31.553233 [PHY0   ] [I] [ 3560] PUCCH: cc=0; rnti=0x46, f=1, n_pucch=0, dmrs_corr=0.193, snr=-0.2 dB, corr=0.000, sr=no, ta=-13.1 us
+2025-12-05T18:29:31.554367 [PHY1   ] [I] [ 3561] PUCCH: cc=0; rnti=0x46, f=2, n_pucch=0, dmrs_corr=0.305, snr=1.1 dB, corr=0.000, cqi=0 (cc=0), ta=-11.9 us
+2025-12-05T18:29:31.557427 [RLC    ] [I] SRB1: Schedule SN=2 for retx
+2025-12-05T18:29:31.557500 [MAC    ] [I] [ 3564] SCHED: DL tx rnti=0x46, cc=0, pid=0, mask=0x1000, dci=(1, 0), n_rtx=0, cfi=1, tbs=15, buffer=14/0, tti_tx_dl=3568
+2025-12-05T18:29:31.557510 [RLC    ] [I] SRB1: pdu_without_poll: 1
+2025-12-05T18:29:31.557510 [RLC    ] [I] SRB1: byte_without_poll: 9
+2025-12-05T18:29:31.557512 [RLC    ] [I] SRB1: Tx PDU SN=2 (7 B) (attempt 2/4)
+    0000: a0 02 02 28 02 00 00
+2025-12-05T18:29:31.557522 [MAC    ] [I] [ 3564] 0x46 DL LCID=1 len=9
+2025-12-05T18:29:31.557547 [PHY0   ] [I] [ 3564] PDCCH: cc=0, rnti=0x46, f=1, cce= 0, L=1, rbg=0x1000, pid=0, mcs={4}, ndi={1}, tpc_pucch=1, tti_tx_dl=3568
+2025-12-05T18:29:31.557571 [PHY0   ] [I] [ 3564] PDSCH: cc=0, rnti=0x46, nof_prb=2, nof_re=300, tbs={15}, mod={2}, rv={0}, tti_tx_dl=3568
+2025-12-05T18:29:31.558187 [GTPU   ] [I] Removing user - rnti=0x46 not found.
+2025-12-05T18:29:31.558188 [STCK   ] [I] Bearers: No EPS bearer registered for rnti=0x46
+2025-12-05T18:29:31.558616 [RRC    ] [I] Deallocated CQI resources for time-frequency slot (0, 0)
+2025-12-05T18:29:31.558617 [RRC    ] [I] Deallocated SR resources for time-frequency slot (0, 0)
+2025-12-05T18:29:31.558618 [RRC    ] [D] Remaining SR allocations for slot (0, 0): 0
+2025-12-05T18:29:31.558643 [RRC    ] [I] Removed user rnti=0x46
+2025-12-05T18:29:31.565277 [PHY0   ] [I] [ 3572] PUCCH: cc=0; rnti=0x46, f=1a, n_pucch=12, dmrs_corr=0.016, snr=-1.5 dB, corr=0.000, ack=invalid, ta=9.6 us
+2025-12-05T18:29:31.569084 [MAC    ] [I] [ 3575] User rnti=0x46 removed from MAC/PHY
+2025-12-05T18:29:32.257787 [COMN   ] [D] [    0] RxSockets: Closing rx socket handler thread
+2025-12-05T18:29:32.259275 [COMN   ] [D] [    0] RxSockets: closed.
+2025-12-05T18:29:32.259280 [COMN   ] [D] [    0] Socket=-1 could not be closed.
+2025-12-05T18:29:32.264219 [COMN   ] [D] [    0] Socket=-1 could not be closed.
+2025-12-05T18:29:32.264860 [COMN   ] [D] [    0] Socket=-1 could not be closed.
